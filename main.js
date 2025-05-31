@@ -325,6 +325,15 @@ function cargarEstadoGuardado() {
   const fechaHoy = obtenerFechaUTCString();
 
   if (estadoGuardado && estadoGuardado.fecha === fechaHoy) {
+    // Validar si el jugador del día coincide con los intentos guardados
+    if (
+      jugadorDelDia &&
+      !estadoGuardado.intentos.includes(jugadorDelDia.nombre_completo)
+    ) {
+      localStorage.removeItem("estadoJuego");
+      return;
+    }
+
     intentos = estadoGuardado.intentos
       .map((nombre) => jugadores.find((j) => j.nombre_completo === nombre))
       .filter(Boolean);
