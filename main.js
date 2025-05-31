@@ -467,7 +467,7 @@ function mostrarResultadoFinal() {
       const intentosRealizados = intentos.length;
       const mensaje = `⚽ Encontré al jugador de fútbol del ${fecha} en solo ${intentosRealizados} intento${
         intentosRealizados > 1 ? "s" : ""
-      }!\n🔗 https://mi-juego-futbol.com`;
+      }!\n🔗 https://kel-hendros.github.io/futbol/`;
 
       navigator.clipboard.writeText(mensaje).then(() => {
         const alertSpan = document.querySelector(".compartir-alert");
