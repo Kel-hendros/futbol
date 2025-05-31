@@ -17,6 +17,7 @@ async function cargarJugadores() {
   jugadores = await res.json();
   const { jugador, ahoraUTC } = await elegirJugadorDelDia();
   jugadorDelDia = jugador;
+  console.log("Jugador del día:", jugadorDelDia);
   document.getElementById("jugadorCorrecto").textContent =
     "Jugador del día: " + jugadorDelDia.nombre_completo;
   renderJugadorInfo(jugadorDelDia, "jugadorCorrecto");
@@ -31,8 +32,11 @@ async function elegirJugadorDelDia() {
   const offsetMinutos = ahoraLocal.getTimezoneOffset(); // en minutos
   const ahoraUTC = new Date(ahoraLocal.getTime() + offsetMinutos * 60000);
   const yyyyMMdd = ahoraUTC.toISOString().slice(0, 10);
-  const seed = parseInt(yyyyMMdd.replace(/-/g, ""), 10);
-  const index = seed % jugadores.length;
+
+  const fechaBase = new Date("2025-05-31T00:00:00Z");
+  const diffDias = Math.floor((ahoraUTC - fechaBase) / 86400000);
+  const index = diffDias % jugadores.length;
+
   return { jugador: jugadores[index], ahoraUTC };
 }
 
@@ -48,6 +52,9 @@ document.addEventListener("DOMContentLoaded", () => {
     sugerencias.classList.remove("oculto");
     const coincidencias = jugadores
       .filter((j) => j.nombre_completo.toLowerCase().includes(texto))
+      .filter(
+        (j) => !intentos.some((i) => i.nombre_completo === j.nombre_completo)
+      )
       .slice(0, 15);
     if (coincidencias.length === 0) {
       const sinResultado = document.createElement("span");
@@ -57,7 +64,10 @@ document.addEventListener("DOMContentLoaded", () => {
     } else {
       coincidencias.forEach((j) => {
         const li = document.createElement("p");
-        li.textContent = j.nombre_completo;
+        li.innerHTML = `
+          <img src="imagenes/${j.id}.png" alt="${j.nombre_completo}" class="sugerencia-imagen">
+          <span>${j.nombre_completo}</span>
+        `;
         li.onclick = () => {
           input.value = j.nombre_completo;
           sugerencias.innerHTML = "";
@@ -188,10 +198,9 @@ function crearFilaValores(jugador, intentoNum = null, compararCon = null) {
     if (compararCon) {
       switch (headers[i]) {
         case "Nombre":
-          celda.classList.add(
-            "nombre",
-            valor === compararCon.nombre_completo ? "verde" : "rojo"
-          );
+          celda.classList.add("nombre-con-imagen");
+          celda.style.backgroundImage = `url(imagenes/${jugador.id}.png)`;
+
           break;
         case "Origen":
           celda.classList.add(
@@ -262,6 +271,13 @@ const cerrar = document.getElementById("closeHelpBtn");
 
 btn.addEventListener("click", () => modal.showModal());
 cerrar.addEventListener("click", () => modal.close());
+
+// Delegar evento de click para cualquier elemento con clase .icono
+document.addEventListener("click", (e) => {
+  if (e.target.classList.contains("icono")) {
+    modal.showModal();
+  }
+});
 
 // Nuevo contador basado en UTC
 function iniciarContadorUTC(baseDate) {
@@ -350,6 +366,9 @@ function mostrarResultadoFinal() {
 
   resultado.innerHTML = `
     <h2>🎉 ${jugadorDelDia.nombre_completo} 🎉</h2>
+    <div class="jugador-image" id="jugadorImageContainer">
+        <img class="imagen-jugador" src="imagenes/${jugadorDelDia.id}.png" alt="${jugadorDelDia.nombre_completo}" onerror="this.parentElement.style.display='none'">
+    </div>
     <div class="resuelto">
       <p>Resuelto en ${intentos.length}${resuelto}</p>
       <div class="compartir">
@@ -408,7 +427,6 @@ function manejarCompartir() {
       .share({
         title: "Jugador del día",
         text: mensaje,
-        url: "https://kel-hendros.github.io/futbol/",
       })
       .catch((error) => console.log("Error al compartir:", error));
   }

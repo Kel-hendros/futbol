@@ -1,1102 +1,2380 @@
 [
   {
-    "nombre_completo": "Lionel Andrés Messi Cuccittini",
-    "pais_nacimiento": "Argentina",
-    "continente": "América del Sur",
-    "equipos": ["Newell's Old Boys", "FC Barcelona", "Paris Saint-Germain", "Inter Miami"],
-    "año_nacimiento": 1987,
-    "campeonatos": ["Copa del Mundo", "Copa América", "Champions League"],
-    "posición_preferida": "Delantero",
-    "camisetas": [10, 30, 19, 18],
-    "imagen_rostro": "https://img.a.transfermarkt.technology/portrait/header/28003-1740766555.jpg"
-  },
-  {
-    "nombre_completo": "Diego Armando Maradona Franco",
-    "pais_nacimiento": "Argentina",
-    "continente": "América del Sur",
-    "equipos": ["Argentinos Juniors", "Boca Juniors", "FC Barcelona", "SSC Napoli", "Sevilla FC", "Newell's Old Boys"],
-    "año_nacimiento": 1960,
-    "campeonatos": ["Copa del Mundo"],
-    "posición_preferida": "Medio",
-    "camisetas": [10],
-    "imagen_rostro": "https://img.a.transfermarkt.technology/portrait/header/8024-1606322777.png"
-  },
-  {
-    "nombre_completo": "Edson Arantes do Nascimento (Pelé)",
-    "pais_nacimiento": "Brasil",
-    "continente": "América del Sur",
-    "equipos": ["Santos FC", "New York Cosmos"],
-    "año_nacimiento": 1940,
-    "campeonatos": ["Copa del Mundo", "Copa Libertadores"],
-    "posición_preferida": "Delantero",
-    "camisetas": [10],
-    "imagen_rostro": "https://img.a.transfermarkt.technology/portrait/header/17121-1672341199.jpg?"
-  },
-  {
-    "nombre_completo": "Cristiano Ronaldo dos Santos Aveiro",
-    "pais_nacimiento": "Portugal",
-    "continente": "Europa",
-    "equipos": ["Sporting CP", "Manchester United", "Real Madrid", "Juventus", "Al Nassr"],
-    "año_nacimiento": 1985,
-    "campeonatos": ["Eurocopa", "Champions League", "Liga de Naciones"],
-    "posición_preferida": "Delantero",
-    "camisetas": [7, 9, 17, 28],
-    "imagen_rostro": "https://img.a.transfermarkt.technology/portrait/header/8198-1748102259.jpg"
-  },
-  {
-    "nombre_completo": "Alfredo Stéfano Di Stéfano Laulhé",
-    "pais_nacimiento": "Argentina",
-    "continente": "América del Sur",
-    "equipos": ["River Plate", "Huracán", "Millonarios", "Real Madrid", "RCD Espanyol"],
-    "año_nacimiento": 1926,
-    "campeonatos": ["Champions League", "Copa América"],
-    "posición_preferida": "Delantero",
-    "camisetas": [9],
-    "imagen_rostro": ""
-  },
-  {
-    "nombre_completo": "Hendrik Johannes Cruijff",
-    "pais_nacimiento": "Países Bajos",
-    "continente": "Europa",
-    "equipos": ["Ajax", "FC Barcelona", "Los Angeles Aztecs", "Washington Diplomats", "Levante UD", "Feyenoord"],
-    "año_nacimiento": 1947,
-    "campeonatos": ["Champions League"],
-    "posición_preferida": "Delantero",
-    "camisetas": [14, 9],
-    "imagen_rostro": ""
-  },
-  {
-    "nombre_completo": "Ronaldo Luís Nazário de Lima",
-    "pais_nacimiento": "Brasil",
-    "continente": "América del Sur",
-    "equipos": ["Cruzeiro", "PSV Eindhoven", "FC Barcelona", "Inter de Milán", "Real Madrid", "AC Milan", "Corinthians"],
-    "año_nacimiento": 1976,
-    "campeonatos": ["Copa del Mundo", "Copa América"],
-    "posición_preferida": "Delantero",
-    "camisetas": [9, 20, 99],
-    "imagen_rostro": ""
-  },
-  {
-    "nombre_completo": "Franz Anton Beckenbauer",
-    "pais_nacimiento": "Alemania",
-    "continente": "Europa",
-    "equipos": ["Bayern Munich", "New York Cosmos", "Hamburgo SV"],
-    "año_nacimiento": 1945,
-    "campeonatos": ["Copa del Mundo", "Eurocopa", "Champions League"],
-    "posición_preferida": "Defensa",
-    "camisetas": [5, 4],
-    "imagen_rostro": ""
-  },
-  {
-    "nombre_completo": "Ferenc Purczeld Biró (Ferenc Puskás)",
-    "pais_nacimiento": "Hungría",
-    "continente": "Europa",
-    "equipos": ["Budapest Honvéd", "Real Madrid"],
-    "año_nacimiento": 1927,
-    "campeonatos": ["Champions League"],
-    "posición_preferida": "Delantero",
-    "camisetas": [10],
-    "imagen_rostro": ""
-  },
-  {
-    "nombre_completo": "Michel François Platini",
-    "pais_nacimiento": "Francia",
-    "continente": "Europa",
-    "equipos": ["AS Nancy", "AS Saint-Étienne", "Juventus"],
-    "año_nacimiento": 1955,
-    "campeonatos": ["Eurocopa", "Champions League"],
-    "posición_preferida": "Medio",
-    "camisetas": [10],
-    "imagen_rostro": ""
-  },
-  {
-    "nombre_completo": "Zinedine Yazid Zidane",
-    "pais_nacimiento": "Francia",
-    "continente": "Europa",
-    "equipos": ["AS Cannes", "Girondins de Bordeaux", "Juventus", "Real Madrid"],
-    "año_nacimiento": 1972,
-    "campeonatos": ["Copa del Mundo", "Eurocopa", "Champions League"],
-    "posición_preferida": "Medio",
-    "camisetas": [10, 21, 5],
-    "imagen_rostro": ""
-  },
-  {
-    "nombre_completo": "Manuel Francisco dos Santos (Garrincha)",
-    "pais_nacimiento": "Brasil",
-    "continente": "América del Sur",
-    "equipos": ["Botafogo", "Junior Barranquilla"],
-    "año_nacimiento": 1933,
-    "campeonatos": ["Copa del Mundo"],
-    "posición_preferida": "Extremo",
-    "camisetas": [7, 11],
-    "imagen_rostro": ""
-  },
-  {
-    "nombre_completo": "Ronaldo de Assis Moreira (Ronaldinho)",
-    "pais_nacimiento": "Brasil",
-    "continente": "Europa",
-    "equipos": ["Grêmio", "Paris Saint-Germain", "FC Barcelona", "AC Milan", "Flamengo", "Atlético Mineiro", "Querétaro", "Fluminense"],
-    "año_nacimiento": 1980,
-    "campeonatos": ["Copa del Mundo", "Copa América", "Champions League"],
-    "posición_preferida": "Medio",
-    "camisetas": [10, 21, 11, 80],
-    "imagen_rostro": ""
-  },
-  {
-    "nombre_completo": "Eusébio da Silva Ferreira",
-    "pais_nacimiento": "Mozambique",
-    "continente": "África",
-    "equipos": ["SL Benfica", "Boston Minutemen", "Toronto Metros-Croatia", "SC Beira-Mar", "UD Las Palmas", "CF Monterrey", "SC Beira-Mar (segunda etapa)", "Toronto Blizzard"],
-    "año_nacimiento": 1942,
-    "campeonatos": ["Champions League"],
-    "posición_preferida": "Delantero",
-    "camisetas": [10],
-    "imagen_rostro": ""
-  },
-  {
-    "nombre_completo": "Marcel \"Marco\" van Basten",
-    "pais_nacimiento": "Países Bajos",
-    "continente": "Europa",
-    "equipos": ["Ajax", "AC Milan"],
-    "año_nacimiento": 1964,
-    "campeonatos": ["Eurocopa", "Champions League"],
-    "posición_preferida": "Delantero",
-    "camisetas": [9],
-    "imagen_rostro": ""
-  },
-  {
-    "nombre_completo": "Gerhard Müller",
-    "pais_nacimiento": "Alemania",
-    "continente": "Europa",
-    "equipos": ["Bayern Munich", "Fort Lauderdale Strikers"],
-    "año_nacimiento": 1945,
-    "campeonatos": ["Copa del Mundo", "Eurocopa", "Champions League"],
-    "posición_preferida": "Delantero",
-    "camisetas": [13],
-    "imagen_rostro": ""
-  },
-  {
-    "nombre_completo": "George Best",
-    "pais_nacimiento": "Irlanda del Norte",
-    "continente": "Europa",
-    "equipos": ["Manchester United", "Jewish Guild", "Dunstable Town", "Stockport County", "Cork Celtic", "Los Angeles Aztecs", "Fulham", "Fort Lauderdale Strikers", "Hibernian", "San Jose Earthquakes", "Bournemouth", "Brisbane Lions"],
-    "año_nacimiento": 1946,
-    "campeonatos": ["Champions League"],
-    "posición_preferida": "Extremo",
-    "camisetas": [7, 11],
-    "imagen_rostro": ""
-  },
-  {
-    "nombre_completo": "Sir Robert Charlton",
-    "pais_nacimiento": "Inglaterra",
-    "continente": "Europa",
-    "equipos": ["Manchester United", "Preston North End", "Waterford"],
-    "año_nacimiento": 1937,
-    "campeonatos": ["Copa del Mundo", "Champions League"],
-    "posición_preferida": "Medio",
-    "camisetas": [9],
-    "imagen_rostro": ""
-  },
-  {
-    "nombre_completo": "Paolo Cesare Maldini",
-    "pais_nacimiento": "Italia",
-    "continente": "Europa",
-    "equipos": ["AC Milan"],
-    "año_nacimiento": 1968,
-    "campeonatos": ["Champions League"],
-    "posición_preferida": "Defensa",
-    "camisetas": [3],
-    "imagen_rostro": ""
-  },
-  {
-    "nombre_completo": "Romário de Souza Faria",
-    "pais_nacimiento": "Brasil",
-    "continente": "América del Sur",
-    "equipos": ["Vasco da Gama", "PSV Eindhoven", "FC Barcelona", "Flamengo", "Valencia CF", "Fluminense", "Al-Sadd", "Miami FC", "Adelaide United"],
-    "año_nacimiento": 1966,
-    "campeonatos": ["Copa del Mundo", "Copa América"],
-    "posición_preferida": "Delantero",
-    "camisetas": [11, 10],
-    "imagen_rostro": ""
-  },
-  {
-    "nombre_completo": "Luka Modrić",
-    "pais_nacimiento": "Croacia",
-    "continente": "Europa",
-    "equipos": ["Dinamo Zagreb", "Tottenham Hotspur", "Real Madrid"],
-    "año_nacimiento": 1985,
-    "campeonatos": ["Champions League"],
-    "posición_preferida": "Medio",
-    "camisetas": [10, 14],
-    "imagen_rostro": ""
-  },
-  {
-    "nombre_completo": "Andrés Iniesta Luján",
-    "pais_nacimiento": "España",
-    "continente": "Europa",
-    "equipos": ["FC Barcelona", "Vissel Kobe"],
-    "año_nacimiento": 1984,
-    "campeonatos": ["Copa del Mundo", "Eurocopa", "Champions League"],
-    "posición_preferida": "Medio",
-    "camisetas": [8, 6, 24],
-    "imagen_rostro": ""
-  },
-  {
-    "nombre_completo": "Xavier Hernández Creus",
-    "pais_nacimiento": "España",
-    "continente": "Europa",
-    "equipos": ["FC Barcelona", "Al-Sadd"],
-    "año_nacimiento": 1980,
-    "campeonatos": ["Copa del Mundo", "Eurocopa", "Champions League"],
-    "posición_preferida": "Medio",
-    "camisetas": [6, 8],
-    "imagen_rostro": ""
-  },
-  {
-    "nombre_completo": "Lev Ivánovich Yashin",
-    "pais_nacimiento": "URSS",
-    "continente": "Europa",
-    "equipos": ["Dinamo Moscú"],
-    "año_nacimiento": 1929,
-    "campeonatos": ["Eurocopa"],
-    "posición_preferida": "Portero",
-    "camisetas": [1],
-    "imagen_rostro": ""
-  },
-  {
-    "nombre_completo": "Roberto Baggio",
-    "pais_nacimiento": "Italia",
-    "continente": "Europa",
-    "equipos": ["Vicenza", "Fiorentina", "Juventus", "AC Milan", "Bologna", "Inter de Milán", "Brescia"],
-    "año_nacimiento": 1967,
-    "campeonatos": ["Ninguno"],
-    "posición_preferida": "Delantero",
-    "camisetas": [10, 18],
-    "imagen_rostro": ""
-  },
-  {
-    "nombre_completo": "Lothar Herbert Matthäus",
-    "pais_nacimiento": "Alemania",
-    "continente": "Europa",
-    "equipos": ["Borussia Mönchengladbach", "Bayern Munich", "Inter de Milán", "MetroStars"],
-    "año_nacimiento": 1961,
-    "campeonatos": ["Copa del Mundo"],
-    "posición_preferida": "Medio",
-    "camisetas": [10],
-    "imagen_rostro": ""
-  },
-  {
-    "nombre_completo": "Luis Suárez Miramontes",
-    "pais_nacimiento": "España",
-    "continente": "Europa",
-    "equipos": ["Deportivo de La Coruña", "FC Barcelona", "Inter de Milán", "UC Sampdoria"],
-    "año_nacimiento": 1935,
-    "campeonatos": ["Eurocopa", "Champions League"],
-    "posición_preferida": "Medio",
-    "camisetas": [10],
-    "imagen_rostro": ""
-  },
-  {
-    "nombre_completo": "Francisco \"Paco\" Gento López",
-    "pais_nacimiento": "España",
-    "continente": "Europa",
-    "equipos": ["Racing de Santander", "Real Madrid"],
-    "año_nacimiento": 1933,
-    "campeonatos": ["Champions League"],
-    "posición_preferida": "Extremo",
-    "camisetas": [11],
-    "imagen_rostro": ""
-  },
-  {
-    "nombre_completo": "Arthur Antunes Coimbra (Zico)",
-    "pais_nacimiento": "Brasil",
-    "continente": "América del Sur",
-    "equipos": ["Flamengo", "Udinese", "Sumitomo Metals", "Kashima Antlers"],
-    "año_nacimiento": 1953,
-    "campeonatos": ["Copa Libertadores"],
-    "posición_preferida": "Medio",
-    "camisetas": [10],
-    "imagen_rostro": ""
-  },
-  {
-    "nombre_completo": "Raymond Kopaszewski (Raymond Kopa)",
-    "pais_nacimiento": "Francia",
-    "continente": "Europa",
-    "equipos": ["Angers SCO", "Stade de Reims", "Real Madrid"],
-    "año_nacimiento": 1931,
-    "campeonatos": ["Champions League"],
-    "posición_preferida": "Medio",
-    "camisetas": [10, 8],
-    "imagen_rostro": ""
-  },
-  {
-    "nombre_completo": "Ruud Gullit",
-    "pais_nacimiento": "Países Bajos",
-    "continente": "Europa",
-    "equipos": ["HFC Haarlem", "Feyenoord", "PSV Eindhoven", "AC Milan", "Sampdoria", "Chelsea"],
-    "año_nacimiento": 1962,
-    "campeonatos": ["Eurocopa", "Champions League"],
-    "posición_preferida": "Medio",
-    "camisetas": [10],
-    "imagen_rostro": ""
-  },
-  {
-    "nombre_completo": "Roberto Carlos da Silva Rocha",
-    "pais_nacimiento": "Brasil",
-    "continente": "América del Sur",
-    "equipos": ["União São João", "Palmeiras", "Inter de Milán", "Real Madrid", "Fenerbahçe", "Corinthians", "Anzhi Makhachkala", "Delhi Dynamos"],
-    "año_nacimiento": 1973,
-    "campeonatos": ["Copa del Mundo", "Copa América", "Champions League"],
-    "posición_preferida": "Defensa",
-    "camisetas": [3, 6],
-    "imagen_rostro": ""
-  },
-  {
-    "nombre_completo": "Gianluigi Buffon",
-    "pais_nacimiento": "Italia",
-    "continente": "Europa",
-    "equipos": ["Parma", "Juventus", "Paris Saint-Germain"],
-    "año_nacimiento": 1978,
-    "campeonatos": ["Copa del Mundo"],
-    "posición_preferida": "Portero",
-    "camisetas": [1, 77, 88, 30],
-    "imagen_rostro": ""
-  },
-  {
-    "nombre_completo": "Iker Casillas Fernández",
-    "pais_nacimiento": "España",
-    "continente": "Europa",
-    "equipos": ["Real Madrid", "FC Porto"],
-    "año_nacimiento": 1981,
-    "campeonatos": ["Copa del Mundo", "Eurocopa", "Champions League"],
-    "posición_preferida": "Portero",
-    "camisetas": [1],
-    "imagen_rostro": ""
-  },
-  {
-    "nombre_completo": "Hugo Sánchez Márquez",
-    "pais_nacimiento": "México",
-    "continente": "América del Norte",
-    "equipos": ["UNAM Pumas", "Atlético de Madrid", "Real Madrid", "Club América", "Rayo Vallecano", "Atlante"],
-    "año_nacimiento": 1958,
-    "campeonatos": ["Ninguno"],
-    "posición_preferida": "Delantero",
-    "camisetas": [9],
-    "imagen_rostro": ""
-  },
-  {
-    "nombre_completo": "Franco Baresi",
-    "pais_nacimiento": "Italia",
-    "continente": "Europa",
-    "equipos": ["AC Milan"],
-    "año_nacimiento": 1960,
-    "campeonatos": ["Champions League"],
-    "posición_preferida": "Defensa",
-    "camisetas": [6],
-    "imagen_rostro": ""
-  },
-  {
-    "nombre_completo": "Marcos Evangelista de Morães (Cafú)",
-    "pais_nacimiento": "Brasil",
-    "continente": "América del Sur",
-    "equipos": ["São Paulo", "Real Zaragoza", "Palmeiras", "AS Roma", "AC Milan"],
-    "año_nacimiento": 1970,
-    "campeonatos": ["Copa del Mundo", "Copa América", "Champions League"],
-    "posición_preferida": "Defensa",
-    "camisetas": [2],
-    "imagen_rostro": ""
-  },
-  {
-    "nombre_completo": "Rivaldo Vítor Borba Ferreira",
-    "pais_nacimiento": "Brasil",
-    "continente": "América del Sur",
-    "equipos": ["Santa Cruz", "Mogi Mirim", "Corinthians", "Palmeiras", "Deportivo La Coruña", "FC Barcelona", "AC Milan", "Cruzeiro", "Olympiacos", "AEK Atenas", "Bunyodkor", "São Paulo", "Kabuscorp", "São Caetano", "Mogi Mirim (segunda etapa)"],
-    "año_nacimiento": 1972,
-    "campeonatos": ["Copa del Mundo", "Copa América", "Champions League"],
-    "posición_preferida": "Medio",
-    "camisetas": [10, 11],
-    "imagen_rostro": ""
-  },
-  {
-    "nombre_completo": "Robert Frederick Moore",
-    "pais_nacimiento": "Inglaterra",
-    "continente": "Europa",
-    "equipos": ["West Ham United", "Fulham", "San Antonio Thunder"],
-    "año_nacimiento": 1941,
-    "campeonatos": ["Copa del Mundo"],
-    "posición_preferida": "Defensa",
-    "camisetas": [6],
-    "imagen_rostro": ""
-  },
-  {
-    "nombre_completo": "Luís Filipe Madeira Caeiro Figo",
-    "pais_nacimiento": "Portugal",
-    "continente": "Europa",
-    "equipos": ["Sporting CP", "FC Barcelona", "Real Madrid", "Inter de Milán"],
-    "año_nacimiento": 1972,
-    "campeonatos": ["Champions League"],
-    "posición_preferida": "Extremo",
-    "camisetas": [7, 10],
-    "imagen_rostro": ""
-  },
-  {
-    "nombre_completo": "Sergio Ramos García",
-    "pais_nacimiento": "España",
-    "continente": "Europa",
-    "equipos": ["Sevilla FC", "Real Madrid", "Paris Saint-Germain"],
-    "año_nacimiento": 1986,
-    "campeonatos": ["Copa del Mundo", "Eurocopa", "Champions League"],
-    "posición_preferida": "Defensa",
-    "camisetas": [4, 15],
-    "imagen_rostro": ""
-  },
-  {
-    "nombre_completo": "Carlos Alberto Torres",
-    "pais_nacimiento": "Brasil",
-    "continente": "América del Sur",
-    "equipos": ["Fluminense", "Santos FC", "New York Cosmos", "California Surf"],
-    "año_nacimiento": 1944,
-    "campeonatos": ["Copa del Mundo"],
-    "posición_preferida": "Defensa",
-    "camisetas": [4],
-    "imagen_rostro": ""
-  },
-  {
-    "nombre_completo": "Daniel Alberto Passarella",
-    "pais_nacimiento": "Argentina",
-    "continente": "América del Sur",
-    "equipos": ["River Plate", "ACF Fiorentina", "Inter de Milán"],
-    "año_nacimiento": 1953,
-    "campeonatos": ["Copa del Mundo"],
-    "posición_preferida": "Defensa",
-    "camisetas": [6],
-    "imagen_rostro": ""
-  },
-  {
-    "nombre_completo": "Thierry Daniel Henry",
-    "pais_nacimiento": "Francia",
-    "continente": "Europa",
-    "equipos": ["AS Monaco", "Juventus", "Arsenal", "FC Barcelona", "New York Red Bulls"],
-    "año_nacimiento": 1977,
-    "campeonatos": ["Copa del Mundo", "Eurocopa", "Champions League"],
-    "posición_preferida": "Delantero",
-    "camisetas": [14, 12],
-    "imagen_rostro": ""
-  },
-  {
-    "nombre_completo": "Karim Mostafa Benzema",
-    "pais_nacimiento": "Francia",
-    "continente": "Europa",
-    "equipos": ["Olympique Lyonnais", "Real Madrid", "Al-Ittihad"],
-    "año_nacimiento": 1987,
-    "campeonatos": ["Champions League", "Liga de Naciones"],
-    "posición_preferida": "Delantero",
-    "camisetas": [9, 10, 19],
-    "imagen_rostro": ""
-  },
-  {
-    "nombre_completo": "Karl-Heinz Rummenigge",
-    "pais_nacimiento": "Alemania",
-    "continente": "Europa",
-    "equipos": ["Bayern Munich", "Inter de Milán", "Servette FC"],
-    "año_nacimiento": 1955,
-    "campeonatos": ["Eurocopa", "Champions League"],
-    "posición_preferida": "Delantero",
-    "camisetas": [11],
-    "imagen_rostro": ""
-  },
-  {
-    "nombre_completo": "Ricardo Izecson dos Santos Leite (Kaká)",
-    "pais_nacimiento": "Brasil",
-    "continente": "América del Sur",
-    "equipos": ["São Paulo", "AC Milan", "Real Madrid", "Orlando City"],
-    "año_nacimiento": 1982,
-    "campeonatos": ["Copa del Mundo", "Champions League"],
-    "posición_preferida": "Medio",
-    "camisetas": [22, 8, 10],
-    "imagen_rostro": ""
-  },
-  {
+    "id": "47",
     "nombre_completo": "Raúl González Blanco",
     "pais_nacimiento": "España",
     "continente": "Europa",
-    "equipos": ["Real Madrid", "Schalke 04", "Al-Sadd", "New York Cosmos"],
+    "equipos": [
+      "Real Madrid",
+      "Schalke 04",
+      "Al-Sadd",
+      "New York Cosmos"
+    ],
     "año_nacimiento": 1977,
-    "campeonatos": ["Champions League"],
+    "campeonatos": [
+      "Champions League"
+    ],
     "posición_preferida": "Delantero",
-    "camisetas": [7],
-    "imagen_rostro": ""
+    "camisetas": "7",
+    "leyenda": "FALSE"
   },
   {
-    "nombre_completo": "Neymar da Silva Santos Júnior",
+    "id": "99",
+    "nombre_completo": "Hernán Crespo",
+    "pais_nacimiento": "Argentina",
+    "continente": "América del Sur",
+    "equipos": [
+      "River Plate",
+      "Parma",
+      "Inter de Milán"
+    ],
+    "año_nacimiento": 1975,
+    "campeonatos": [
+      "Copa Libertadores"
+    ],
+    "posición_preferida": "Delantero",
+    "camisetas": "9",
+    "leyenda": "FALSE"
+  },
+  {
+    "id": "48",
+    "nombre_completo": "Neymar da Silva",
     "pais_nacimiento": "Brasil",
     "continente": "América del Sur",
-    "equipos": ["Santos FC", "FC Barcelona", "Paris Saint-Germain", "Al-Hilal"],
+    "equipos": [
+      "Santos FC",
+      "FC Barcelona",
+      "Paris Saint-Germain",
+      "Al-Hilal"
+    ],
     "año_nacimiento": 1992,
-    "campeonatos": ["Champions League", "Copa Libertadores"],
+    "campeonatos": [
+      "Champions League",
+      "Copa Libertadores"
+    ],
     "posición_preferida": "Delantero",
-    "camisetas": [10, 11],
-    "imagen_rostro": ""
+    "camisetas": [
+      "10",
+      "11"
+    ],
+    "leyenda": "FALSE"
   },
   {
-    "nombre_completo": "Andriy Mykolayovych Shevchenko",
-    "pais_nacimiento": "Ucrania",
-    "continente": "Europa",
-    "equipos": ["Dynamo Kyiv", "AC Milan", "Chelsea"],
-    "año_nacimiento": 1976,
-    "campeonatos": ["Champions League"],
-    "posición_preferida": "Delantero",
-    "camisetas": [7],
-    "imagen_rostro": ""
-  },
-  {
-    "nombre_completo": "Robert Lewandowski",
-    "pais_nacimiento": "Polonia",
-    "continente": "Europa",
-    "equipos": ["Lech Poznań", "Borussia Dortmund", "Bayern Munich", "FC Barcelona"],
-    "año_nacimiento": 1988,
-    "campeonatos": ["Champions League"],
-    "posición_preferida": "Delantero",
-    "camisetas": [9],
-    "imagen_rostro": ""
-  },
-  {
-    "nombre_completo": "Zlatan Ibrahimović",
-    "pais_nacimiento": "Suecia",
-    "continente": "Europa",
-    "equipos": ["Malmö FF", "Ajax", "Juventus", "Inter de Milán", "FC Barcelona", "AC Milan", "Paris Saint-Germain", "Manchester United", "LA Galaxy"],
-    "año_nacimiento": 1981,
-    ",campeonatos": ["Ninguno"],
-    "posición_preferida": "Delantero",
-    "camisetas": [9, 10, 11, 8, 18],
-    "imagen_rostro": ""
-  },
-  {
-    "nombre_completo": "Luis Alberto Suárez Díaz",
-    "pais_nacimiento": "Uruguay",
-    "continente": "América del Sur",
-    "equipos": ["Nacional", "FC Groningen", "Ajax", "Liverpool", "FC Barcelona", "Atlético de Madrid", "Grêmio"],
-    "año_nacimiento": 1987,
-    "campeonatos": ["Copa América", "Champions League"],
-    "posición_preferida": "Delantero",
-    "camisetas": [9, 7, 16, 10],
-    "imagen_rostro": ""
-  },
-  {
-    "nombre_completo": "Manuel Peter Neuer",
-    "pais_nacimiento": "Alemania",
-    "continente": "Europa",
-    "equipos": ["Schalke 04", "Bayern Munich"],
-    "año_nacimiento": 1986,
-    "campeonatos": ["Copa del Mundo", "Champions League"],
-    "posición_preferida": "Portero",
-    "camisetas": [1],
-    "imagen_rostro": ""
-  },
-  {
-    "nombre_completo": "Mario Alberto Kempes",
-    "pais_nacimiento": "Argentina",
-    "continente": "América del Sur",
-    "equipos": ["Instituto", "Rosario Central", "Valencia CF", "River Plate", "Hércules CF", "Vienna FC", "Sankt Pölten"],
-    "año_nacimiento": 1954,
-    "campeonatos": ["Copa del Mundo"],
-    "posición_preferida": "Delantero",
-    "camisetas": [10],
-    "imagen_rostro": ""
-  },
-  {
-    "nombre_completo": "Giuseppe Meazza",
-    "pais_nacimiento": "Italia",
-    "continente": "Europa",
-    "equipos": ["Inter de Milán", "AC Milan", "Juventus", "Varese", "Atalanta"],
-    "año_nacimiento": 1910,
-    "campeonatos": ["Copa del Mundo"],
-    "posición_preferida": "Delantero",
-    "camisetas": [10],
-    "imagen_rostro": ""
-  },
-  {
-    "nombre_completo": "Fabio Cannavaro",
-    "pais_nacimiento": "Italia",
-    "continente": "Europa",
-    "equipos": ["Napoli", "Parma", "Inter de Milán", "Juventus", "Real Madrid", "Al-Ahli (Dubai)"],
-    "año_nacimiento": 1973,
-    "campeonatos": ["Copa del Mundo"],
-    "posición_preferida": "Defensa",
-    "camisetas": [5, 28],
-    "imagen_rostro": ""
-  },
-  {
-    "nombre_completo": "Roberto Rivellino",
-    "pais_nacimiento": "Brasil",
-    "continente": "América del Sur",
-    "equipos": ["Corinthians", "Fluminense", "Al-Hilal"],
-    "año_nacimiento": 1946,
-    "campeonatos": ["Copa del Mundo"],
-    "posición_preferida": "Medio",
-    "camisetas": [11],
-    "imagen_rostro": ""
-  },
-  {
-    "nombre_completo": "Ladislao Kubala",
-    "pais_nacimiento": "Hungría",
-    "continente": "Europa",
-    "equipos": ["Ferencváros", "SK Slovan Bratislava", "Vasas SC", "FC Barcelona", "RCD Espanyol", "FC Zürich"],
-    "año_nacimiento": 1927,
-    "campeonatos": ["Ninguno"],
-    "posición_preferida": "Delantero",
-    "camisetas": [10],
-    "imagen_rostro": ""
-  },
-  {
-    "nombre_completo": "Nílton Santos",
-    "pais_nacimiento": "Brasil",
-    "continente": "América del Sur",
-    "equipos": ["Botafogo"],
-    "año_nacimiento": 1925,
-    "campeonatos": ["Copa del Mundo"],
-    "posición_preferida": "Defensa",
-    "camisetas": [6],
-    "imagen_rostro": ""
-  },
-  {
-    "nombre_completo": "Waldyr Pereira (Didi)",
-    "pais_nacimiento": "Brasil",
-    "continente": "América del Sur",
-    "equipos": ["Americano-RJ", "Fluminense", "Botafogo", "Real Madrid", "Sporting Cristal"],
-    "año_nacimiento": 1928,
-    "campeonatos": ["Copa del Mundo"],
-    "posición_preferida": "Medio",
-    "camisetas": [8],
-    "imagen_rostro": ""
-  },
-  {
-    "nombre_completo": "Enrique Omar Sívori",
-    "pais_nacimiento": "Argentina",
-    "continente": "América del Sur",
-    "equipos": ["River Plate", "Juventus", "SSC Napoli"],
-    "año_nacimiento": 1935,
-    "campeonatos": ["Copa América"],
-    "posición_preferida": "Medio",
-    "camisetas": [10],
-    "imagen_rostro": ""
-  },
-  {
-    "nombre_completo": "Sir Stanley Matthews",
-    "pais_nacimiento": "Inglaterra",
-    "continente": "Europa",
-    "equipos": ["Stoke City", "Blackpool", "Toronto City"],
-    "año_nacimiento": 1915,
-    "campeonatos": ["Ninguno"],
-    "posición_preferida": "Extremo",
-    "camisetas": [7],
-    "imagen_rostro": ""
-  },
-  {
-    "nombre_completo": "Alessandro Del Piero",
-    "pais_nacimiento": "Italia",
-    "continente": "Europa",
-    "equipos": ["Juventus", "Sydney FC", "Delhi Dynamos"],
-    "año_nacimiento": 1974,
-    "campeonatos": ["Copa del Mundo", "Champions League"],
-    "posición_preferida": "Delantero",
-    "camisetas": [10, 7],
-    "imagen_rostro": ""
-  },
-  {
-    "nombre_completo": "José Manuel Moreno Fernández",
-    "pais_nacimiento": "Argentina",
-    "continente": "América del Sur",
-    "equipos": ["River Plate", "RCD Espanyol", "Universidad Católica", "Boca Juniors", "Defensor Sporting", "Ferrocarril Oeste"],
-    "año_nacimiento": 1916,
-    "campeonatos": ["Copa América"],
-    "posición_preferida": "Medio",
-    "camisetas": [10],
-    "imagen_rostro": ""
-  },
-  {
-    "nombre_completo": "Hristo Stoichkov",
-    "pais_nacimiento": "Bulgaria",
-    "continente": "Europa",
-    "equipos": ["CSKA Sofía", "FC Barcelona", "Parma", "Al-Nassr", "Kashiwa Reysol", "Chicago Fire", "DC United"],
-    "año_nacimiento": 1966,
-    "campeonatos": ["Champions League"],
-    "posición_preferida": "Delantero",
-    "camisetas": [8],
-    "imagen_rostro": ""
-  },
-  {
-    "nombre_completo": "George Tawlon Manneh Oppong Ousman Weah",
-    "pais_nacimiento": "Liberia",
-    "continente": "África",
-    "equipos": ["Tonnerre Yaoundé", "AS Monaco", "Paris Saint-Germain", "AC Milan", "Chelsea", "Manchester City", "Olympique de Marseille", "Al-Jazira"],
-    "año_nacimiento": 1966,
-    "campeonatos": ["Ninguno"],
-    "posición_preferida": "Delantero",
-    "camisetas": [9],
-    "imagen_rostro": ""
-  },
-  {
-    "nombre_completo": "Michael Laudrup",
-    "pais_nacimiento": "Dinamarca",
-    "continente": "Europa",
-    "equipos": ["Brøndby IF", "SS Lazio", "Juventus", "FC Barcelona", "Real Madrid", "Vissel Kobe", "Ajax"],
-    "año_nacimiento": 1964,
-    "campeonatos": ["Champions League"],
-    "posición_preferida": "Medio",
-    "camisetas": [10],
-    "imagen_rostro": ""
-  },
-  {
-    "nombre_completo": "Dennis Nicolaas Maria Bergkamp",
-    "pais_nacimiento": "Países Bajos",
-    "continente": "Europa",
-    "equipos": ["Ajax", "Inter de Milán", "Arsenal"],
-    "año_nacimiento": 1969,
-    "campeonatos": ["Ninguno"],
-    "posición_preferida": "Delantero",
-    "camisetas": [10],
-    "imagen_rostro": ""
-  },
-  {
-    "nombre_completo": "Pavel Nedvěd",
-    "pais_nacimiento": "Chequia",
-    "continente": "Europa",
-    "equipos": ["FK Dukla Praga", "Sparta Praga", "SS Lazio", "Juventus"],
-    "año_nacimiento": 1972,
-    "campeonatos": ["Ninguno"],
-    "posición_preferida": "Medio",
-    "camisetas": [10, 11],
-    "imagen_rostro": ""
-  },
-  {
-    "nombre_completo": "Franck Henry Pierre Ribéry",
-    "pais_nacimiento": "Francia",
-    "continente": "Europa",
-    "equipos": ["Metz", "Galatasaray", "Olympique de Marsella", "Bayern Munich", "ACF Fiorentina", "US Salernitana"],
-    "año_nacimiento": 1983,
-    "campeonatos": ["Champions League"],
-    "posición_preferida": "Extremo",
-    "camisetas": [7, 22],
-    "imagen_rostro": ""
-  },
-  {
-    "nombre_completo": "Arjen Robben",
-    "pais_nacimiento": "Países Bajos",
-    "continente": "Europa",
-    "equipos": ["FC Groningen", "PSV Eindhoven", "Chelsea", "Real Madrid", "Bayern Munich"],
-    "año_nacimiento": 1984,
-    "campeonatos": ["Champions League"],
-    "posición_preferida": "Extremo",
-    "camisetas": [10, 11, 16],
-    "imagen_rostro": ""
-  },
-  {
-    "nombre_completo": "Dino Zoff",
-    "pais_nacimiento": "Italia",
-    "continente": "Europa",
-    "equipos": ["Udinese", "Mantova", "Napoli", "Juventus"],
-    "año_nacimiento": 1942,
-    "campeonatos": ["Copa del Mundo", "Eurocopa"],
-    "posición_preferida": "Portero",
-    "camisetas": [1],
-    "imagen_rostro": ""
-  },
-  {
-    "nombre_completo": "Kevin De Bruyne",
-    "pais_nacimiento": "Bélgica",
-    "continente": "Europa",
-    "equipos": ["Genk", "Werder Bremen", "Chelsea", "VfL Wolfsburgo", "Manchester City"],
-    "año_nacimiento": 1991,
-    "campeonatos": ["Champions League"],
-    "posición_preferida": "Medio",
-    "camisetas": [17, 7],
-    "imagen_rostro": ""
-  },
-  {
-    "nombre_completo": "Samuel Eto'o Fils",
-    "pais_nacimiento": "Camerún",
-    "continente": "África",
-    "equipos": ["Real Madrid", "RCD Mallorca", "FC Barcelona", "Inter de Milán", "Anzhi Makhachkala", "Chelsea", "Everton", "Sampdoria", "Antalyaspor", "Konyaspor", "Qatar SC"],
-    "año_nacimiento": 1981,
-    "campeonatos": ["Champions League", "Copa Africana de Naciones"],
-    "posición_preferida": "Delantero",
-    "camisetas": [9],
-    "imagen_rostro": ""
-  },
-  {
-    "nombre_completo": "Sergio Leonel Agüero del Castillo",
-    "pais_nacimiento": "Argentina",
-    "continente": "América del Sur",
-    "equipos": ["Independiente", "Atlético de Madrid", "Manchester City", "FC Barcelona"],
-    "año_nacimiento": 1988,
-    "campeonatos": ["Copa América"],
-    "posición_preferida": "Delantero",
-    "camisetas": [10, 16],
-    "imagen_rostro": ""
-  },
-  {
-    "nombre_completo": "Andrea Pirlo",
-    "pais_nacimiento": "Italia",
-    "continente": "Europa",
-    "equipos": ["Brescia", "Inter de Milán", "Reggina", "AC Milan", "Juventus", "New York City FC"],
-    "año_nacimiento": 1979,
-    "campeonatos": ["Copa del Mundo", "Champions League"],
-    "posición_preferida": "Medio",
-    "camisetas": [21],
-    "imagen_rostro": ""
-  },
-  {
-    "nombre_completo": "Wayne Mark Rooney",
-    "pais_nacimiento": "Inglaterra",
-    "continente": "Europa",
-    "equipos": ["Everton", "Manchester United", "DC United", "Derby County"],
-    "año_nacimiento": 1985,
-    "campeonatos": ["Champions League"],
-    "posición_preferida": "Delantero",
-    "camisetas": [10],
-    "imagen_rostro": ""
-  },
-  {
-    "nombre_completo": "Mesut Özil",
-    "pais_nacimiento": "Alemania",
-    "continente": "Europa",
-    "equipos": ["Schalke 04", "Werder Bremen", "Real Madrid", "Arsenal", "Fenerbahçe", "İstanbul Başakşehir"],
-    "año_nacimiento": 1988,
-    "campeonatos": ["Copa del Mundo"],
-    "posición_preferida": "Medio",
-    "camisetas": [10, 11, 8],
-    "imagen_rostro": ""
-  },
-  {
-    "nombre_completo": "Francesco Totti",
-    "pais_nacimiento": "Italia",
-    "continente": "Europa",
-    "equipos": ["AS Roma"],
-    "año_nacimiento": 1976,
-    "campeonatos": ["Copa del Mundo"],
-    "posición_preferida": "Delantero",
-    "camisetas": [10],
-    "imagen_rostro": ""
-  },
-  {
-    "nombre_completo": "Didier Yves Drogba Tébily",
-    "pais_nacimiento": "Costa de Marfil",
-    "continente": "África",
-    "equipos": ["Le Mans", "Guingamp", "Olympique de Marsella", "Chelsea", "Shanghai Shenhua", "Galatasaray", "Montreal Impact", "Phoenix Rising"],
-    "año_nacimiento": 1978,
-    "campeonatos": ["Champions League"],
-    "posición_preferida": "Delantero",
-    "camisetas": [11],
-    "imagen_rostro": ""
-  },
-  {
-    "nombre_completo": "Steven George Gerrard",
-    "pais_nacimiento": "Inglaterra",
-    "continente": "Europa",
-    "equipos": ["Liverpool", "LA Galaxy"],
-    "año_nacimiento": 1980,
-    "campeonatos": ["Champions League"],
-    "posición_preferida": "Medio",
-    "camisetas": [8, 4],
-    "imagen_rostro": ""
-  },
-  {
-    "nombre_completo": "Gheorghe Hagi",
-    "pais_nacimiento": "Rumania",
-    "continente": "Europa",
-    "equipos": ["Farul Constanța", "Sportul Studențesc", "Steaua București", "Real Madrid", "FC Barcelona", "Brescia", "Galatasaray"],
-    "año_nacimiento": 1965,
-    "campeonatos": ["Ninguno"],
-    "posición_preferida": "Medio",
-    "camisetas": [10],
-    "imagen_rostro": ""
-  },
-  {
-    "nombre_completo": "Teófilo Juan Cubillas Arizaga",
-    "pais_nacimiento": "Perú",
-    "continente": "América del Sur",
-    "equipos": ["Alianza Lima", "FC Basel", "Porto", "Fort Lauderdale Strikers", "South Florida Sun"],
-    "año_nacimiento": 1949,
-    "campeonatos": ["Copa América"],
-    "posición_preferida": "Medio",
-    "camisetas": [10],
-    "imagen_rostro": ""
-  },
-  {
-    "nombre_completo": "Enzo Francescoli Uriarte",
-    "pais_nacimiento": "Uruguay",
-    "continente": "América del Sur",
-    "equipos": ["Montevideo Wanderers", "River Plate", "Racing Club Paris", "Olympique de Marseille", "Cagliari", "Torino"],
-    "año_nacimiento": 1961,
-    "campeonatos": ["Copa América"],
-    "posición_preferida": "Medio",
-    "camisetas": [10],
-    "imagen_rostro": ""
-  },
-  {
-    "nombre_completo": "Kevin Keegan",
-    "pais_nacimiento": "Inglaterra",
-    "continente": "Europa",
-    "equipos": ["Scunthorpe United", "Liverpool", "Hamburgo SV", "Southampton", "Newcastle United"],
-    "año_nacimiento": 1951,
-    "campeonatos": ["Ninguno"],
-    "posición_preferida": "Delantero",
-    "camisetas": [7],
-    "imagen_rostro": ""
-  },
-  {
-    "nombre_completo": "Sócrates Brasileiro Sampaio de Souza Vieira de Oliveira",
-    "pais_nacimiento": "Brasil",
-    "continente": "América del Sur",
-    "equipos": ["Botafogo-SP", "Corinthians", "Fiorentina", "Flamengo", "Santos FC", "Garforth Town"],
-    "año_nacimiento": 1954,
-    "campeonatos": ["Ninguno"],
-    "posición_preferida": "Medio",
-    "camisetas": [8],
-    "imagen_rostro": ""
-  },
-  {
-    "nombre_completo": "Matthias Sindelar",
-    "pais_nacimiento": "Austria",
-    "continente": "Europa",
-    "equipos": ["Hertha Viena", "FK Austria Viena"],
-    "año_nacimiento": 1903,
-    "campeonatos": ["Ninguno"],
-    "posición_preferida": "Delantero",
-    "camisetas": [10],
-    "imagen_rostro": ""
-  },
-  {
-    "nombre_completo": "Elías Ricardo Figueroa Brander",
-    "pais_nacimiento": "Chile",
-    "continente": "América del Sur",
-    "equipos": ["Santiago Wanderers", "CA Peñarol", "Internacional de Porto Alegre", "Palestino"],
-    "año_nacimiento": 1946,
-    "campeonatos": ["Ninguno"],
-    "posición_preferida": "Defensa",
-    "camisetas": [5],
-    "imagen_rostro": ""
-  },
-  {
-    "nombre_completo": "Josef Bican",
-    "pais_nacimiento": "Austria",
-    "continente": "Europa",
-    "equipos": ["Rapid Viena", "Admira Viena", "Slavia Praga", "FC Vítkovice", "FC Hradec Králové", "Dynamo Praga"],
-    "año_nacimiento": 1913,
-    "campeonatos": ["Ninguno"],
-    "posición_preferida": "Delantero",
-    "camisetas": [9],
-    "imagen_rostro": ""
-  },
-  {
-    "nombre_completo": "Paolo Rossi",
-    "pais_nacimiento": "Italia",
-    "continente": "Europa",
-    "equipos": ["Vicenza", "Perugia", "Juventus", "AC Milan", "Hellas Verona"],
-    "año_nacimiento": 1956,
-    "campeonatos": ["Copa del Mundo"],
-    "posición_preferida": "Delantero",
-    "camisetas": [9],
-    "imagen_rostro": ""
-  },
-  {
+    "id": "88",
     "nombre_completo": "Jair Ventura Filho (Jairzinho)",
     "pais_nacimiento": "Brasil",
     "continente": "América del Sur",
-    "equipos": ["Botafogo", "Olympique de Marsella", "Kaizer Chiefs"],
+    "equipos": [
+      "Botafogo",
+      "Olympique de Marsella",
+      "Kaizer Chiefs"
+    ],
     "año_nacimiento": 1944,
-    "campeonatos": ["Copa del Mundo"],
+    "campeonatos": [
+      "Copa del Mundo"
+    ],
     "posición_preferida": "Extremo",
-    "camisetas": [7],
-    "imagen_rostro": ""
+    "camisetas": "7",
+    "leyenda": "TRUE"
   },
   {
-    "nombre_completo": "Gianni Rivera",
-    "pais_nacimiento": "Italia",
-    "continente": "Europa",
-    "equipos": ["Alessandria", "AC Milan"],
-    "año_nacimiento": 1943,
-    "campeonatos": ["Eurocopa", "Champions League"],
-    "posición_preferida": "Medio",
-    "camisetas": [10],
-    "imagen_rostro": ""
-  },
-  {
-    "nombre_completo": "Sándor Kocsis",
-    "pais_nacimiento": "Hungría",
-    "continente": "Europa",
-    "equipos": ["Ferencváros", "Budapest Honvéd", "FC Barcelona", "FC Zürich"],
-    "año_nacimiento": 1929,
-    "campeonatos": ["Ninguno"],
-    "posición_preferida": "Delantero",
-    "camisetas": [8],
-    "imagen_rostro": ""
-  },
-  {
-    "nombre_completo": "Juan Alberto Schiaffino Villano",
-    "pais_nacimiento": "Uruguay",
+    "id": "37",
+    "nombre_completo": "Marcos Evangelista (Cafu)",
+    "pais_nacimiento": "Brasil",
     "continente": "América del Sur",
-    "equipos": ["Peñarol", "AC Milan", "AS Roma"],
-    "año_nacimiento": 1925,
-    "campeonatos": ["Copa del Mundo"],
-    "posición_preferida": "Medio",
-    "camisetas": [10],
-    "imagen_rostro": ""
-  },
-  {
-    "nombre_completo": "Josef Masopust",
-    "pais_nacimiento": "Checoslovaquia",
-    "continente": "Europa",
-    "equipos": ["Dukla Praga"],
-    "año_nacimiento": 1931,
-    "campeonatos": ["Ninguno"],
-    "posición_preferida": "Medio",
-    "camisetas": [6],
-    "imagen_rostro": ""
-  },
-  {
-    "nombre_completo": "Philipp Lahm",
-    "pais_nacimiento": "Alemania",
-    "continente": "Europa",
-    "equipos": ["Bayern Munich", "VfB Stuttgart"],
-    "año_nacimiento": 1983,
-    "campeonatos": ["Copa del Mundo", "Champions League"],
+    "equipos": [
+      "São Paulo",
+      "Real Zaragoza",
+      "Palmeiras",
+      "AS Roma",
+      "AC Milan"
+    ],
+    "año_nacimiento": 1970,
+    "campeonatos": [
+      "Copa del Mundo",
+      "Copa América",
+      "Champions League"
+    ],
     "posición_preferida": "Defensa",
-    "camisetas": [21, 16],
-    "imagen_rostro": ""
+    "camisetas": "2",
+    "leyenda": "FALSE"
   },
   {
+    "id": "79",
+    "nombre_completo": "Gheorghe Hagi",
+    "pais_nacimiento": "Rumania",
+    "continente": "Europa",
+    "equipos": [
+      "Farul Constanța",
+      "Sportul Studențesc",
+      "Steaua București",
+      "Real Madrid",
+      "FC Barcelona",
+      "Brescia",
+      "Galatasaray"
+    ],
+    "año_nacimiento": 1965,
+    "campeonatos": [
+      "Ninguno"
+    ],
+    "posición_preferida": "Medio",
+    "camisetas": "10",
+    "leyenda": "FALSE"
+  },
+  {
+    "id": "85",
+    "nombre_completo": "Elías Ricardo Figueroa Brander",
+    "pais_nacimiento": "Chile",
+    "continente": "América del Sur",
+    "equipos": [
+      "Santiago Wanderers",
+      "CA Peñarol",
+      "Internacional de Porto Alegre",
+      "Palestino"
+    ],
+    "año_nacimiento": 1946,
+    "campeonatos": [
+      "Ninguno"
+    ],
+    "posición_preferida": "Defensa",
+    "camisetas": "5",
+    "leyenda": "TRUE"
+  },
+  {
+    "id": "105",
+    "nombre_completo": "Martín Palermo",
+    "pais_nacimiento": "Argentina",
+    "continente": "América del Sur",
+    "equipos": [
+      "Estudiantes de La Plata",
+      "Boca Juniors",
+      "Villarreal CF"
+    ],
+    "año_nacimiento": 1973,
+    "campeonatos": [
+      "Copa Libertadores"
+    ],
+    "posición_preferida": "Delantero",
+    "camisetas": "9",
+    "leyenda": "FALSE"
+  },
+  {
+    "id": "40",
+    "nombre_completo": "Sergio Ramos",
+    "pais_nacimiento": "España",
+    "continente": "Europa",
+    "equipos": [
+      "Sevilla FC",
+      "Real Madrid",
+      "Paris Saint-Germain"
+    ],
+    "año_nacimiento": 1986,
+    "campeonatos": [
+      "Copa del Mundo",
+      "Eurocopa",
+      "Champions League"
+    ],
+    "posición_preferida": "Defensa",
+    "camisetas": [
+      "4",
+      "15"
+    ],
+    "leyenda": "FALSE"
+  },
+  {
+    "id": "14",
+    "nombre_completo": "Eusébio da Silva Ferreira",
+    "pais_nacimiento": "Mozambique",
+    "continente": "África",
+    "equipos": [
+      "SL Benfica",
+      "Boston Minutemen",
+      "Toronto Metros-Croatia",
+      "SC Beira-Mar",
+      "UD Las Palmas",
+      "CF Monterrey",
+      "SC Beira-Mar (segunda etapa)",
+      "Toronto Blizzard"
+    ],
+    "año_nacimiento": 1942,
+    "campeonatos": [
+      "Champions League"
+    ],
+    "posición_preferida": "Delantero",
+    "camisetas": "10",
+    "leyenda": "TRUE"
+  },
+  {
+    "id": "94",
     "nombre_completo": "Just Fontaine",
     "pais_nacimiento": "Marruecos",
     "continente": "África",
-    "equipos": ["USM Casablanca", "OGC Niza", "Stade de Reims"],
+    "equipos": [
+      "USM Casablanca",
+      "OGC Niza",
+      "Stade de Reims"
+    ],
     "año_nacimiento": 1933,
-    "campeonatos": ["Ninguno"],
+    "campeonatos": [
+      "Ninguno"
+    ],
     "posición_preferida": "Delantero",
-    "camisetas": [17],
-    "imagen_rostro": ""
+    "camisetas": "17",
+    "leyenda": "TRUE"
   },
   {
-    "nombre_completo": "Zbigniew Boniek",
-    "pais_nacimiento": "Polonia",
+    "id": "86",
+    "nombre_completo": "Josef Bican",
+    "pais_nacimiento": "Austria",
     "continente": "Europa",
-    "equipos": ["Widzew Łódź", "Juventus", "AS Roma"],
-    "año_nacimiento": 1956,
-    "campeonatos": ["Champions League"],
-    "posición_preferida": "Medio",
-    "camisetas": [20, 11],
-    "imagen_rostro": ""
+    "equipos": [
+      "Rapid Viena",
+      "Admira Viena",
+      "Slavia Praga",
+      "FC Vítkovice",
+      "FC Hradec Králové",
+      "Dynamo Praga"
+    ],
+    "año_nacimiento": 1913,
+    "campeonatos": [
+      "Ninguno"
+    ],
+    "posición_preferida": "Delantero",
+    "camisetas": "9",
+    "leyenda": "TRUE"
   },
   {
+    "id": "35",
+    "nombre_completo": "Hugo Sánchez",
+    "pais_nacimiento": "México",
+    "continente": "América del Norte",
+    "equipos": [
+      "UNAM Pumas",
+      "Atlético de Madrid",
+      "Real Madrid",
+      "Club América",
+      "Rayo Vallecano",
+      "Atlante"
+    ],
+    "año_nacimiento": 1958,
+    "campeonatos": [
+      "Ninguno"
+    ],
+    "posición_preferida": "Delantero",
+    "camisetas": "9",
+    "leyenda": "TRUE"
+  },
+  {
+    "id": "28",
+    "nombre_completo": "Paco Gento",
+    "pais_nacimiento": "España",
+    "continente": "Europa",
+    "equipos": [
+      "Racing de Santander",
+      "Real Madrid"
+    ],
+    "año_nacimiento": 1933,
+    "campeonatos": [
+      "Champions League"
+    ],
+    "posición_preferida": "Extremo",
+    "camisetas": "11",
+    "leyenda": "TRUE"
+  },
+  {
+    "id": "63",
+    "nombre_completo": "George Weah",
+    "pais_nacimiento": "Liberia",
+    "continente": "África",
+    "equipos": [
+      "Tonnerre Yaoundé",
+      "AS Monaco",
+      "Paris Saint-Germain",
+      "AC Milan",
+      "Chelsea",
+      "Manchester City",
+      "Olympique de Marseille",
+      "Al-Jazira"
+    ],
+    "año_nacimiento": 1966,
+    "campeonatos": [
+      "Ninguno"
+    ],
+    "posición_preferida": "Delantero",
+    "camisetas": "9",
+    "leyenda": "FALSE"
+  },
+  {
+    "id": "96",
     "nombre_completo": "Oliver Rolf Kahn",
     "pais_nacimiento": "Alemania",
     "continente": "Europa",
-    "equipos": ["Karlsruher SC", "Bayern Munich"],
+    "equipos": [
+      "Karlsruher SC",
+      "Bayern Munich"
+    ],
     "año_nacimiento": 1969,
-    "campeonatos": ["Eurocopa", "Champions League"],
+    "campeonatos": [
+      "Eurocopa",
+      "Champions League"
+    ],
     "posición_preferida": "Portero",
-    "camisetas": [1],
-    "imagen_rostro": ""
+    "camisetas": "1",
+    "leyenda": "FALSE"
+  },
+  {
+    "id": "31",
+    "nombre_completo": "Ruud Gullit",
+    "pais_nacimiento": "Países Bajos",
+    "continente": "Europa",
+    "equipos": [
+      "HFC Haarlem",
+      "Feyenoord",
+      "PSV Eindhoven",
+      "AC Milan",
+      "Sampdoria",
+      "Chelsea"
+    ],
+    "año_nacimiento": 1962,
+    "campeonatos": [
+      "Eurocopa",
+      "Champions League"
+    ],
+    "posición_preferida": "Medio",
+    "camisetas": "10",
+    "leyenda": "FALSE"
+  },
+  {
+    "id": "22",
+    "nombre_completo": "Andrés Iniesta",
+    "pais_nacimiento": "España",
+    "continente": "Europa",
+    "equipos": [
+      "FC Barcelona",
+      "Vissel Kobe"
+    ],
+    "año_nacimiento": 1984,
+    "campeonatos": [
+      "Copa del Mundo",
+      "Eurocopa",
+      "Champions League"
+    ],
+    "posición_preferida": "Medio",
+    "camisetas": [
+      "8",
+      "6",
+      "24"
+    ],
+    "leyenda": "FALSE"
+  },
+  {
+    "id": "104",
+    "nombre_completo": "Ariel Ortega",
+    "pais_nacimiento": "Argentina",
+    "continente": "América del Sur",
+    "equipos": [
+      "River Plate",
+      "Valencia CF",
+      "Parma"
+    ],
+    "año_nacimiento": 1974,
+    "campeonatos": [
+      "Copa Libertadores"
+    ],
+    "posición_preferida": "Medio",
+    "camisetas": "10",
+    "leyenda": "FALSE"
+  },
+  {
+    "id": "30",
+    "nombre_completo": "Raymond Kopa",
+    "pais_nacimiento": "Francia",
+    "continente": "Europa",
+    "equipos": [
+      "Angers SCO",
+      "Stade de Reims",
+      "Real Madrid"
+    ],
+    "año_nacimiento": 1931,
+    "campeonatos": [
+      "Champions League"
+    ],
+    "posición_preferida": "Medio",
+    "camisetas": [
+      "10",
+      "8"
+    ],
+    "leyenda": "TRUE"
+  },
+  {
+    "id": "55",
+    "nombre_completo": "Fabio Cannavaro",
+    "pais_nacimiento": "Italia",
+    "continente": "Europa",
+    "equipos": [
+      "Napoli",
+      "Parma",
+      "Inter de Milán",
+      "Juventus",
+      "Real Madrid",
+      "Al-Ahli"
+    ],
+    "año_nacimiento": 1973,
+    "campeonatos": [
+      "Copa del Mundo"
+    ],
+    "posición_preferida": "Defensa",
+    "camisetas": [
+      "5",
+      "28"
+    ],
+    "leyenda": "FALSE"
+  },
+  {
+    "id": "108",
+    "nombre_completo": "Carlos Tévez",
+    "pais_nacimiento": "Argentina",
+    "continente": "América del Sur",
+    "equipos": [
+      "Boca Juniors",
+      "Manchester United",
+      "Manchester City",
+      "Juventus"
+    ],
+    "año_nacimiento": 1984,
+    "campeonatos": [
+      "Champions League",
+      "Copa Libertadores"
+    ],
+    "posición_preferida": "Delantero",
+    "camisetas": [
+      "10",
+      "32"
+    ],
+    "leyenda": "FALSE"
+  },
+  {
+    "id": "51",
+    "nombre_completo": "Zlatan Ibrahimović",
+    "pais_nacimiento": "Suecia",
+    "continente": "Europa",
+    "equipos": [
+      "Malmö FF",
+      "Ajax",
+      "Juventus",
+      "Inter de Milán",
+      "FC Barcelona",
+      "AC Milan",
+      "Paris Saint-Germain",
+      "Manchester United",
+      "LA Galaxy"
+    ],
+    "año_nacimiento": 1981,
+    "campeonatos": [
+      "Ninguno"
+    ],
+    "posición_preferida": "Delantero",
+    "camisetas": [
+      "9",
+      "10",
+      "11",
+      "8",
+      "18"
+    ],
+    "leyenda": "FALSE"
+  },
+  {
+    "id": "7",
+    "nombre_completo": "Ronaldo Nazário",
+    "pais_nacimiento": "Brasil",
+    "continente": "América del Sur",
+    "equipos": [
+      "Cruzeiro",
+      "PSV Eindhoven",
+      "FC Barcelona",
+      "Inter de Milán",
+      "Real Madrid",
+      "AC Milan",
+      "Corinthians"
+    ],
+    "año_nacimiento": 1976,
+    "campeonatos": [
+      "Copa del Mundo",
+      "Copa América"
+    ],
+    "posición_preferida": "Delantero",
+    "camisetas": [
+      "9",
+      "20",
+      "99"
+    ],
+    "leyenda": "FALSE"
+  },
+  {
+    "id": "32",
+    "nombre_completo": "Roberto Carlos",
+    "pais_nacimiento": "Brasil",
+    "continente": "América del Sur",
+    "equipos": [
+      "União São João",
+      "Palmeiras",
+      "Inter de Milán",
+      "Real Madrid",
+      "Fenerbahçe",
+      "Corinthians",
+      "Anzhi Makhachkala",
+      "Delhi Dynamos"
+    ],
+    "año_nacimiento": 1973,
+    "campeonatos": [
+      "Copa del Mundo",
+      "Copa América",
+      "Champions League"
+    ],
+    "posición_preferida": "Defensa",
+    "camisetas": [
+      "3",
+      "6"
+    ],
+    "leyenda": "FALSE"
+  },
+  {
+    "id": "69",
+    "nombre_completo": "Dino Zoff",
+    "pais_nacimiento": "Italia",
+    "continente": "Europa",
+    "equipos": [
+      "Udinese",
+      "Mantova",
+      "Napoli",
+      "Juventus"
+    ],
+    "año_nacimiento": 1942,
+    "campeonatos": [
+      "Copa del Mundo",
+      "Eurocopa"
+    ],
+    "posición_preferida": "Portero",
+    "camisetas": "1",
+    "leyenda": "TRUE"
+  },
+  {
+    "id": "18",
+    "nombre_completo": "Sir Bobby Charlton",
+    "pais_nacimiento": "Inglaterra",
+    "continente": "Europa",
+    "equipos": [
+      "Manchester United",
+      "Preston North End",
+      "Waterford"
+    ],
+    "año_nacimiento": 1937,
+    "campeonatos": [
+      "Copa del Mundo",
+      "Champions League"
+    ],
+    "posición_preferida": "Medio",
+    "camisetas": "9",
+    "leyenda": "TRUE"
+  },
+  {
+    "id": "109",
+    "nombre_completo": "Juan Sebastián Verón",
+    "pais_nacimiento": "Argentina",
+    "continente": "América del Sur",
+    "equipos": [
+      "Estudiantes de La Plata",
+      "SS Lazio",
+      "Manchester United",
+      "Inter de Milán"
+    ],
+    "año_nacimiento": 1975,
+    "campeonatos": [
+      "Copa Libertadores"
+    ],
+    "posición_preferida": "Medio",
+    "camisetas": "11",
+    "leyenda": "FALSE"
+  },
+  {
+    "id": "25",
+    "nombre_completo": "Roberto Baggio",
+    "pais_nacimiento": "Italia",
+    "continente": "Europa",
+    "equipos": [
+      "Vicenza",
+      "Fiorentina",
+      "Juventus",
+      "AC Milan",
+      "Bologna",
+      "Inter de Milán",
+      "Brescia"
+    ],
+    "año_nacimiento": 1967,
+    "campeonatos": [
+      "Ninguno"
+    ],
+    "posición_preferida": "Delantero",
+    "camisetas": [
+      "10",
+      "18"
+    ],
+    "leyenda": "FALSE"
+  },
+  {
+    "id": "78",
+    "nombre_completo": "Steven Gerrard",
+    "pais_nacimiento": "Inglaterra",
+    "continente": "Europa",
+    "equipos": [
+      "Liverpool",
+      "LA Galaxy"
+    ],
+    "año_nacimiento": 1980,
+    "campeonatos": [
+      "Champions League"
+    ],
+    "posición_preferida": "Medio",
+    "camisetas": [
+      "8",
+      "4"
+    ],
+    "leyenda": "FALSE"
+  },
+  {
+    "id": "27",
+    "nombre_completo": "Luis Suárez Miramontes",
+    "pais_nacimiento": "España",
+    "continente": "Europa",
+    "equipos": [
+      "Deportivo de La Coruña",
+      "FC Barcelona",
+      "Inter de Milán",
+      "UC Sampdoria"
+    ],
+    "año_nacimiento": 1935,
+    "campeonatos": [
+      "Eurocopa",
+      "Champions League"
+    ],
+    "posición_preferida": "Medio",
+    "camisetas": "10",
+    "leyenda": "TRUE"
+  },
+  {
+    "id": "112",
+    "nombre_completo": "Kylian Mbappé",
+    "pais_nacimiento": "Francia",
+    "continente": "Europa",
+    "equipos": [
+      "AS Monaco",
+      "Paris Saint-Germain"
+    ],
+    "año_nacimiento": 1998,
+    "campeonatos": [
+      "Copa del Mundo",
+      "Liga de Naciones"
+    ],
+    "posición_preferida": "Extremo",
+    "camisetas": "10",
+    "leyenda": "FALSE"
+  },
+  {
+    "id": "62",
+    "nombre_completo": "Hristo Stoichkov",
+    "pais_nacimiento": "Bulgaria",
+    "continente": "Europa",
+    "equipos": [
+      "CSKA Sofía",
+      "FC Barcelona",
+      "Parma",
+      "Al-Nassr",
+      "Kashiwa Reysol",
+      "Chicago Fire",
+      "DC United"
+    ],
+    "año_nacimiento": 1966,
+    "campeonatos": [
+      "Champions League"
+    ],
+    "posición_preferida": "Delantero",
+    "camisetas": "8",
+    "leyenda": "FALSE"
+  },
+  {
+    "id": "2",
+    "nombre_completo": "Diego Maradona",
+    "pais_nacimiento": "Argentina",
+    "continente": "América del Sur",
+    "equipos": [
+      "Argentinos Juniors",
+      "Boca Juniors",
+      "FC Barcelona",
+      "SSC Napoli",
+      "Sevilla FC",
+      "Newell's Old Boys"
+    ],
+    "año_nacimiento": 1960,
+    "campeonatos": [
+      "Copa del Mundo"
+    ],
+    "posición_preferida": "Medio",
+    "camisetas": "10",
+    "leyenda": "TRUE"
+  },
+  {
+    "id": "75",
+    "nombre_completo": "Mesut Özil",
+    "pais_nacimiento": "Alemania",
+    "continente": "Europa",
+    "equipos": [
+      "Schalke 04",
+      "Werder Bremen",
+      "Real Madrid",
+      "Arsenal",
+      "Fenerbahçe",
+      "İstanbul Başakşehir"
+    ],
+    "año_nacimiento": 1988,
+    "campeonatos": [
+      "Copa del Mundo"
+    ],
+    "posición_preferida": "Medio",
+    "camisetas": [
+      "10",
+      "11",
+      "8"
+    ],
+    "leyenda": "FALSE"
+  },
+  {
+    "id": "58",
+    "nombre_completo": "Omar Sívori",
+    "pais_nacimiento": "Argentina",
+    "continente": "América del Sur",
+    "equipos": [
+      "River Plate",
+      "Juventus",
+      "SSC Napoli"
+    ],
+    "año_nacimiento": 1935,
+    "campeonatos": [
+      "Copa América"
+    ],
+    "posición_preferida": "Medio",
+    "camisetas": "10",
+    "leyenda": "TRUE"
+  },
+  {
+    "id": "3",
+    "nombre_completo": "Edson do Nascimento (Pelé)",
+    "pais_nacimiento": "Brasil",
+    "continente": "América del Sur",
+    "equipos": [
+      "Santos FC",
+      "New York Cosmos"
+    ],
+    "año_nacimiento": 1940,
+    "campeonatos": [
+      "Copa del Mundo",
+      "Copa Libertadores"
+    ],
+    "posición_preferida": "Delantero",
+    "camisetas": "10",
+    "leyenda": "TRUE"
+  },
+  {
+    "id": "11",
+    "nombre_completo": "Zinedine Zidane",
+    "pais_nacimiento": "Francia",
+    "continente": "Europa",
+    "equipos": [
+      "AS Cannes",
+      "Girondins de Bordeaux",
+      "Juventus",
+      "Real Madrid"
+    ],
+    "año_nacimiento": 1972,
+    "campeonatos": [
+      "Copa del Mundo",
+      "Eurocopa",
+      "Champions League"
+    ],
+    "posición_preferida": "Medio",
+    "camisetas": [
+      "10",
+      "21",
+      "5"
+    ],
+    "leyenda": "FALSE"
+  },
+  {
+    "id": "100",
+    "nombre_completo": "Ángel Di María",
+    "pais_nacimiento": "Argentina",
+    "continente": "América del Sur",
+    "equipos": [
+      "Rosario Central",
+      "Real Madrid",
+      "Paris Saint-Germain"
+    ],
+    "año_nacimiento": 1988,
+    "campeonatos": [
+      "Champions League",
+      "Copa América",
+      "Copa del Mundo"
+    ],
+    "posición_preferida": "Extremo",
+    "camisetas": "11",
+    "leyenda": "FALSE"
+  },
+  {
+    "id": "68",
+    "nombre_completo": "Arjen Robben",
+    "pais_nacimiento": "Países Bajos",
+    "continente": "Europa",
+    "equipos": [
+      "FC Groningen",
+      "PSV Eindhoven",
+      "Chelsea",
+      "Real Madrid",
+      "Bayern Munich"
+    ],
+    "año_nacimiento": 1984,
+    "campeonatos": [
+      "Champions League"
+    ],
+    "posición_preferida": "Extremo",
+    "camisetas": [
+      "10",
+      "11",
+      "16"
+    ],
+    "leyenda": "FALSE"
+  },
+  {
+    "id": "103",
+    "nombre_completo": "Javier Mascherano",
+    "pais_nacimiento": "Argentina",
+    "continente": "América del Sur",
+    "equipos": [
+      "River Plate",
+      "Liverpool FC",
+      "FC Barcelona"
+    ],
+    "año_nacimiento": 1984,
+    "campeonatos": [
+      "Champions League"
+    ],
+    "posición_preferida": "Medio",
+    "camisetas": "14",
+    "leyenda": "FALSE"
+  },
+  {
+    "id": "89",
+    "nombre_completo": "Gianni Rivera",
+    "pais_nacimiento": "Italia",
+    "continente": "Europa",
+    "equipos": [
+      "Alessandria",
+      "AC Milan"
+    ],
+    "año_nacimiento": 1943,
+    "campeonatos": [
+      "Eurocopa",
+      "Champions League"
+    ],
+    "posición_preferida": "Medio",
+    "camisetas": "10",
+    "leyenda": "TRUE"
+  },
+  {
+    "id": "64",
+    "nombre_completo": "Michael Laudrup",
+    "pais_nacimiento": "Dinamarca",
+    "continente": "Europa",
+    "equipos": [
+      "Brøndby IF",
+      "SS Lazio",
+      "Juventus",
+      "FC Barcelona",
+      "Real Madrid",
+      "Vissel Kobe",
+      "Ajax"
+    ],
+    "año_nacimiento": 1964,
+    "campeonatos": [
+      "Champions League"
+    ],
+    "posición_preferida": "Medio",
+    "camisetas": "10",
+    "leyenda": "FALSE"
+  },
+  {
+    "id": "102",
+    "nombre_completo": "Gonzalo Higuaín",
+    "pais_nacimiento": "Francia",
+    "continente": "Europa",
+    "equipos": [
+      "River Plate",
+      "Real Madrid",
+      "SSC Napoli",
+      "Juventus"
+    ],
+    "año_nacimiento": 1987,
+    "campeonatos": [
+      "Ninguna"
+    ],
+    "posición_preferida": "Delantero",
+    "camisetas": "9",
+    "leyenda": "FALSE"
+  },
+  {
+    "id": "83",
+    "nombre_completo": "Sócrates Brasileiro",
+    "pais_nacimiento": "Brasil",
+    "continente": "América del Sur",
+    "equipos": [
+      "Botafogo-SP",
+      "Corinthians",
+      "Fiorentina",
+      "Flamengo",
+      "Santos FC",
+      "Garforth Town"
+    ],
+    "año_nacimiento": 1954,
+    "campeonatos": [
+      "Ninguno"
+    ],
+    "posición_preferida": "Medio",
+    "camisetas": "8",
+    "leyenda": "TRUE"
+  },
+  {
+    "id": "81",
+    "nombre_completo": "Enzo Francescoli",
+    "pais_nacimiento": "Uruguay",
+    "continente": "América del Sur",
+    "equipos": [
+      "Montevideo Wanderers",
+      "River Plate",
+      "Racing Club Paris",
+      "Olympique de Marseille",
+      "Cagliari",
+      "Torino"
+    ],
+    "año_nacimiento": 1961,
+    "campeonatos": [
+      "Copa América"
+    ],
+    "posición_preferida": "Medio",
+    "camisetas": "10",
+    "leyenda": "FALSE"
+  },
+  {
+    "id": "43",
+    "nombre_completo": "Thierry Henry",
+    "pais_nacimiento": "Francia",
+    "continente": "Europa",
+    "equipos": [
+      "AS Monaco",
+      "Juventus",
+      "Arsenal",
+      "FC Barcelona",
+      "New York Red Bulls"
+    ],
+    "año_nacimiento": 1977,
+    "campeonatos": [
+      "Copa del Mundo",
+      "Eurocopa",
+      "Champions League"
+    ],
+    "posición_preferida": "Delantero",
+    "camisetas": [
+      "14",
+      "12"
+    ],
+    "leyenda": "FALSE"
+  },
+  {
+    "id": "10",
+    "nombre_completo": "Michel Platini",
+    "pais_nacimiento": "Francia",
+    "continente": "Europa",
+    "equipos": [
+      "AS Nancy",
+      "AS Saint-Étienne",
+      "Juventus"
+    ],
+    "año_nacimiento": 1955,
+    "campeonatos": [
+      "Eurocopa",
+      "Champions League"
+    ],
+    "posición_preferida": "Medio",
+    "camisetas": "10",
+    "leyenda": "TRUE"
+  },
+  {
+    "id": "23",
+    "nombre_completo": "Xavier Hernández (Xavi)",
+    "pais_nacimiento": "España",
+    "continente": "Europa",
+    "equipos": [
+      "FC Barcelona",
+      "Al-Sadd"
+    ],
+    "año_nacimiento": 1980,
+    "campeonatos": [
+      "Copa del Mundo",
+      "Eurocopa",
+      "Champions League"
+    ],
+    "posición_preferida": "Medio",
+    "camisetas": [
+      "6",
+      "8"
+    ],
+    "leyenda": "FALSE"
+  },
+  {
+    "id": "38",
+    "nombre_completo": "Rivaldo Ferreira",
+    "pais_nacimiento": "Brasil",
+    "continente": "América del Sur",
+    "equipos": [
+      "Santa Cruz",
+      "Mogi Mirim",
+      "Corinthians",
+      "Palmeiras",
+      "Deportivo La Coruña",
+      "FC Barcelona",
+      "AC Milan",
+      "Cruzeiro",
+      "Olympiacos",
+      "AEK Atenas",
+      "Bunyodkor",
+      "São Paulo",
+      "Kabuscorp",
+      "São Caetano",
+      "Mogi Mirim"
+    ],
+    "año_nacimiento": 1972,
+    "campeonatos": [
+      "Copa del Mundo",
+      "Copa América",
+      "Champions League"
+    ],
+    "posición_preferida": "Medio",
+    "camisetas": [
+      "10",
+      "11"
+    ],
+    "leyenda": "FALSE"
+  },
+  {
+    "id": "70",
+    "nombre_completo": "Kevin De Bruyne",
+    "pais_nacimiento": "Bélgica",
+    "continente": "Europa",
+    "equipos": [
+      "Genk",
+      "Werder Bremen",
+      "Chelsea",
+      "VfL Wolfsburgo",
+      "Manchester City"
+    ],
+    "año_nacimiento": 1991,
+    "campeonatos": [
+      "Champions League"
+    ],
+    "posición_preferida": "Medio",
+    "camisetas": [
+      "17",
+      "7"
+    ],
+    "leyenda": "FALSE"
+  },
+  {
+    "id": "71",
+    "nombre_completo": "Samuel Eto'o",
+    "pais_nacimiento": "Camerún",
+    "continente": "África",
+    "equipos": [
+      "Real Madrid",
+      "RCD Mallorca",
+      "FC Barcelona",
+      "Inter de Milán",
+      "Anzhi Makhachkala",
+      "Chelsea",
+      "Everton",
+      "Sampdoria",
+      "Antalyaspor",
+      "Konyaspor",
+      "Qatar SC"
+    ],
+    "año_nacimiento": 1981,
+    "campeonatos": [
+      "Champions League",
+      "Copa Africana de Naciones"
+    ],
+    "posición_preferida": "Delantero",
+    "camisetas": "9",
+    "leyenda": "FALSE"
+  },
+  {
+    "id": "87",
+    "nombre_completo": "Paolo Rossi",
+    "pais_nacimiento": "Italia",
+    "continente": "Europa",
+    "equipos": [
+      "Vicenza",
+      "Perugia",
+      "Juventus",
+      "AC Milan",
+      "Hellas Verona"
+    ],
+    "año_nacimiento": 1956,
+    "campeonatos": [
+      "Copa del Mundo"
+    ],
+    "posición_preferida": "Delantero",
+    "camisetas": "9",
+    "leyenda": "TRUE"
+  },
+  {
+    "id": "77",
+    "nombre_completo": "Didier Drogba",
+    "pais_nacimiento": "Costa de Marfil",
+    "continente": "África",
+    "equipos": [
+      "Le Mans",
+      "Guingamp",
+      "Olympique de Marsella",
+      "Chelsea",
+      "Shanghai Shenhua",
+      "Galatasaray",
+      "Montreal Impact",
+      "Phoenix Rising"
+    ],
+    "año_nacimiento": 1978,
+    "campeonatos": [
+      "Champions League"
+    ],
+    "posición_preferida": "Delantero",
+    "camisetas": "11",
+    "leyenda": "FALSE"
+  },
+  {
+    "id": "110",
+    "nombre_completo": "Javier Zanetti",
+    "pais_nacimiento": "Argentina",
+    "continente": "América del Sur",
+    "equipos": [
+      "CA Banfield",
+      "Inter de Milán"
+    ],
+    "año_nacimiento": 1973,
+    "campeonatos": [
+      "Champions League"
+    ],
+    "posición_preferida": "Defensa",
+    "camisetas": "4",
+    "leyenda": "FALSE"
+  },
+  {
+    "id": "97",
+    "nombre_completo": "Emiliano Martínez (Dibu)",
+    "pais_nacimiento": "Argentina",
+    "continente": "América del Sur",
+    "equipos": [
+      "Aston Villa",
+      "Arsenal",
+      "Reading",
+      "Getafe",
+      "Wolves",
+      "Sheffield Wednesday",
+      "Oxford United"
+    ],
+    "año_nacimiento": 1992,
+    "campeonatos": [
+      "Copa América",
+      "Copa del Mundo"
+    ],
+    "posición_preferida": "Portero",
+    "camisetas": "23",
+    "leyenda": "FALSE"
+  },
+  {
+    "id": "82",
+    "nombre_completo": "Kevin Keegan",
+    "pais_nacimiento": "Inglaterra",
+    "continente": "Europa",
+    "equipos": [
+      "Scunthorpe United",
+      "Liverpool",
+      "Hamburgo SV",
+      "Southampton",
+      "Newcastle United"
+    ],
+    "año_nacimiento": 1951,
+    "campeonatos": [
+      "Ninguno"
+    ],
+    "posición_preferida": "Delantero",
+    "camisetas": "7",
+    "leyenda": "TRUE"
+  },
+  {
+    "id": "113",
+    "nombre_completo": "Carlos Valderrama",
+    "pais_nacimiento": "Colombia",
+    "continente": "América del Sur",
+    "equipos": [
+      "Millonarios",
+      "Deportivo Cali",
+      "Montpellier",
+      "Real Valladolid",
+      "Indep. Medellin",
+      "Junior FC",
+      "Tampa Bay",
+      "Miami Fusion",
+      "Colorado"
+    ],
+    "año_nacimiento": 1961,
+    "campeonatos": [
+      "Ninguno"
+    ],
+    "posición_preferida": "Medio",
+    "camisetas": "10",
+    "leyenda": "FALSE"
+  },
+  {
+    "id": "60",
+    "nombre_completo": "Alessandro Del Piero",
+    "pais_nacimiento": "Italia",
+    "continente": "Europa",
+    "equipos": [
+      "Juventus",
+      "Sydney FC",
+      "Delhi Dynamos"
+    ],
+    "año_nacimiento": 1974,
+    "campeonatos": [
+      "Copa del Mundo",
+      "Champions League"
+    ],
+    "posición_preferida": "Delantero",
+    "camisetas": [
+      "10",
+      "7"
+    ],
+    "leyenda": "FALSE"
+  },
+  {
+    "id": "36",
+    "nombre_completo": "Franco Baresi",
+    "pais_nacimiento": "Italia",
+    "continente": "Europa",
+    "equipos": [
+      "AC Milan"
+    ],
+    "año_nacimiento": 1960,
+    "campeonatos": [
+      "Champions League"
+    ],
+    "posición_preferida": "Defensa",
+    "camisetas": "6",
+    "leyenda": "TRUE"
+  },
+  {
+    "id": "53",
+    "nombre_completo": "Manuel Neuer",
+    "pais_nacimiento": "Alemania",
+    "continente": "Europa",
+    "equipos": [
+      "Schalke 04",
+      "Bayern Munich"
+    ],
+    "año_nacimiento": 1986,
+    "campeonatos": [
+      "Copa del Mundo",
+      "Champions League"
+    ],
+    "posición_preferida": "Portero",
+    "camisetas": "1",
+    "leyenda": "FALSE"
+  },
+  {
+    "id": "80",
+    "nombre_completo": "Teófilo Cubillas",
+    "pais_nacimiento": "Perú",
+    "continente": "América del Sur",
+    "equipos": [
+      "Alianza Lima",
+      "FC Basel",
+      "Porto",
+      "Fort Lauderdale Strikers",
+      "South Florida Sun"
+    ],
+    "año_nacimiento": 1949,
+    "campeonatos": [
+      "Copa América"
+    ],
+    "posición_preferida": "Medio",
+    "camisetas": "10",
+    "leyenda": "TRUE"
+  },
+  {
+    "id": "9",
+    "nombre_completo": "Ferenc Puskás",
+    "pais_nacimiento": "Hungría",
+    "continente": "Europa",
+    "equipos": [
+      "Budapest Honvéd",
+      "Real Madrid"
+    ],
+    "año_nacimiento": 1927,
+    "campeonatos": [
+      "Champions League"
+    ],
+    "posición_preferida": "Delantero",
+    "camisetas": "10",
+    "leyenda": "TRUE"
+  },
+  {
+    "id": "101",
+    "nombre_completo": "Marcelo Gallardo",
+    "pais_nacimiento": "Argentina",
+    "continente": "América del Sur",
+    "equipos": [
+      "River Plate",
+      "AS Mónaco",
+      "Paris Saint-Germain"
+    ],
+    "año_nacimiento": 1976,
+    "campeonatos": [
+      "Copa Libertadores"
+    ],
+    "posición_preferida": "Medio",
+    "camisetas": "10",
+    "leyenda": "FALSE"
+  },
+  {
+    "id": "95",
+    "nombre_completo": "Zbigniew Boniek",
+    "pais_nacimiento": "Polonia",
+    "continente": "Europa",
+    "equipos": [
+      "Widzew Łódź",
+      "Juventus",
+      "AS Roma"
+    ],
+    "año_nacimiento": 1956,
+    "campeonatos": [
+      "Champions League"
+    ],
+    "posición_preferida": "Medio",
+    "camisetas": [
+      "20",
+      "11"
+    ],
+    "leyenda": "TRUE"
+  },
+  {
+    "id": "13",
+    "nombre_completo": "Ronaldinho",
+    "pais_nacimiento": "Brasil",
+    "continente": "Europa",
+    "equipos": [
+      "Grêmio",
+      "Paris Saint-Germain",
+      "FC Barcelona",
+      "AC Milan",
+      "Flamengo",
+      "Atlético Mineiro",
+      "Querétaro",
+      "Fluminense"
+    ],
+    "año_nacimiento": 1980,
+    "campeonatos": [
+      "Copa del Mundo",
+      "Copa América",
+      "Champions League"
+    ],
+    "posición_preferida": "Medio",
+    "camisetas": [
+      "10",
+      "21",
+      "11",
+      "80"
+    ],
+    "leyenda": "FALSE"
+  },
+  {
+    "id": "84",
+    "nombre_completo": "Matthias Sindelar",
+    "pais_nacimiento": "Austria",
+    "continente": "Europa",
+    "equipos": [
+      "Hertha Viena",
+      "FK Austria Viena"
+    ],
+    "año_nacimiento": 1903,
+    "campeonatos": [
+      "Ninguno"
+    ],
+    "posición_preferida": "Delantero",
+    "camisetas": "10",
+    "leyenda": "TRUE"
+  },
+  {
+    "id": "107",
+    "nombre_completo": "Javier Saviola",
+    "pais_nacimiento": "Argentina",
+    "continente": "América del Sur",
+    "equipos": [
+      "River Plate",
+      "FC Barcelona",
+      "Real Madrid"
+    ],
+    "año_nacimiento": 1981,
+    "campeonatos": [
+      "Ninguna"
+    ],
+    "posición_preferida": "Delantero",
+    "camisetas": "7",
+    "leyenda": "FALSE"
+  },
+  {
+    "id": "67",
+    "nombre_completo": "Franck Ribéry",
+    "pais_nacimiento": "Francia",
+    "continente": "Europa",
+    "equipos": [
+      "Metz",
+      "Galatasaray",
+      "Olympique de Marsella",
+      "Bayern Munich",
+      "ACF Fiorentina",
+      "US Salernitana"
+    ],
+    "año_nacimiento": 1983,
+    "campeonatos": [
+      "Champions League"
+    ],
+    "posición_preferida": "Extremo",
+    "camisetas": [
+      "7",
+      "22"
+    ],
+    "leyenda": "FALSE"
+  },
+  {
+    "id": "1",
+    "nombre_completo": "Lionel Messi",
+    "pais_nacimiento": "Argentina",
+    "continente": "América del Sur",
+    "equipos": [
+      "Newell's Old Boys",
+      "FC Barcelona",
+      "Paris Saint-Germain",
+      "Inter Miami"
+    ],
+    "año_nacimiento": 1987,
+    "campeonatos": [
+      "Copa del Mundo",
+      "Copa América",
+      "Champions League"
+    ],
+    "posición_preferida": "Delantero",
+    "camisetas": [
+      "10",
+      "30",
+      "19",
+      "18"
+    ],
+    "leyenda": "FALSE"
+  },
+  {
+    "id": "46",
+    "nombre_completo": "Ricardo dos Santos (Kaká)",
+    "pais_nacimiento": "Brasil",
+    "continente": "América del Sur",
+    "equipos": [
+      "São Paulo",
+      "AC Milan",
+      "Real Madrid",
+      "Orlando City"
+    ],
+    "año_nacimiento": 1982,
+    "campeonatos": [
+      "Copa del Mundo",
+      "Champions League"
+    ],
+    "posición_preferida": "Medio",
+    "camisetas": [
+      "22",
+      "8",
+      "10"
+    ],
+    "leyenda": "FALSE"
+  },
+  {
+    "id": "29",
+    "nombre_completo": "Arthur Coimbra (Zico)",
+    "pais_nacimiento": "Brasil",
+    "continente": "América del Sur",
+    "equipos": [
+      "Flamengo",
+      "Udinese",
+      "Sumitomo Metals",
+      "Kashima Antlers"
+    ],
+    "año_nacimiento": 1953,
+    "campeonatos": [
+      "Copa Libertadores"
+    ],
+    "posición_preferida": "Medio",
+    "camisetas": "10",
+    "leyenda": "TRUE"
+  },
+  {
+    "id": "4",
+    "nombre_completo": "Cristiano Ronaldo dos Santos",
+    "pais_nacimiento": "Portugal",
+    "continente": "Europa",
+    "equipos": [
+      "Sporting CP",
+      "Manchester United",
+      "Real Madrid",
+      "Juventus",
+      "Al Nassr"
+    ],
+    "año_nacimiento": 1985,
+    "campeonatos": [
+      "Eurocopa",
+      "Champions League",
+      "Liga de Naciones"
+    ],
+    "posición_preferida": "Delantero",
+    "camisetas": [
+      "7",
+      "9",
+      "17",
+      "28"
+    ],
+    "leyenda": "FALSE"
+  },
+  {
+    "id": "56",
+    "nombre_completo": "Roberto Rivellino",
+    "pais_nacimiento": "Brasil",
+    "continente": "América del Sur",
+    "equipos": [
+      "Corinthians",
+      "Fluminense",
+      "Al-Hilal"
+    ],
+    "año_nacimiento": 1946,
+    "campeonatos": [
+      "Copa del Mundo"
+    ],
+    "posición_preferida": "Medio",
+    "camisetas": "11",
+    "leyenda": "TRUE"
+  },
+  {
+    "id": "6",
+    "nombre_completo": "Johan Cruijff",
+    "pais_nacimiento": "Países Bajos",
+    "continente": "Europa",
+    "equipos": [
+      "Ajax",
+      "FC Barcelona",
+      "Los Angeles Aztecs",
+      "Washington Diplomats",
+      "Levante UD",
+      "Feyenoord"
+    ],
+    "año_nacimiento": 1947,
+    "campeonatos": [
+      "Champions League"
+    ],
+    "posición_preferida": "Delantero",
+    "camisetas": [
+      "14",
+      "9"
+    ],
+    "leyenda": "TRUE"
+  },
+  {
+    "id": "17",
+    "nombre_completo": "George Best",
+    "pais_nacimiento": "Irlanda del Norte",
+    "continente": "Europa",
+    "equipos": [
+      "Manchester United",
+      "Jewish Guild",
+      "Dunstable Town",
+      "Stockport County",
+      "Cork Celtic",
+      "Los Angeles Aztecs",
+      "Fulham",
+      "Fort Lauderdale Strikers",
+      "Hibernian",
+      "San Jose Earthquakes",
+      "Bournemouth",
+      "Brisbane Lions"
+    ],
+    "año_nacimiento": 1946,
+    "campeonatos": [
+      "Champions League"
+    ],
+    "posición_preferida": "Extremo",
+    "camisetas": [
+      "7",
+      "11"
+    ],
+    "leyenda": "TRUE"
+  },
+  {
+    "id": "57",
+    "nombre_completo": "Waldyr Pereira (Didi)",
+    "pais_nacimiento": "Brasil",
+    "continente": "América del Sur",
+    "equipos": [
+      "Americano-RJ",
+      "Fluminense",
+      "Botafogo",
+      "Real Madrid",
+      "Sporting Cristal"
+    ],
+    "año_nacimiento": 1928,
+    "campeonatos": [
+      "Copa del Mundo"
+    ],
+    "posición_preferida": "Medio",
+    "camisetas": "8",
+    "leyenda": "TRUE"
+  },
+  {
+    "id": "91",
+    "nombre_completo": "Juan Alberto Schiaffino Villano",
+    "pais_nacimiento": "Uruguay",
+    "continente": "América del Sur",
+    "equipos": [
+      "Peñarol",
+      "AC Milan",
+      "AS Roma"
+    ],
+    "año_nacimiento": 1925,
+    "campeonatos": [
+      "Copa del Mundo"
+    ],
+    "posición_preferida": "Medio",
+    "camisetas": "10",
+    "leyenda": "TRUE"
+  },
+  {
+    "id": "98",
+    "nombre_completo": "Pablo Aimar",
+    "pais_nacimiento": "Argentina",
+    "continente": "América del Sur",
+    "equipos": [
+      "River Plate",
+      "Valencia CF",
+      "SL Benfica"
+    ],
+    "año_nacimiento": 1979,
+    "campeonatos": [
+      "Ninguna"
+    ],
+    "posición_preferida": "Medio",
+    "camisetas": "10",
+    "leyenda": "FALSE"
+  },
+  {
+    "id": "39",
+    "nombre_completo": "Luís Figo",
+    "pais_nacimiento": "Portugal",
+    "continente": "Europa",
+    "equipos": [
+      "Sporting CP",
+      "FC Barcelona",
+      "Real Madrid",
+      "Inter de Milán"
+    ],
+    "año_nacimiento": 1972,
+    "campeonatos": [
+      "Champions League"
+    ],
+    "posición_preferida": "Extremo",
+    "camisetas": [
+      "7",
+      "10"
+    ],
+    "leyenda": "FALSE"
+  },
+  {
+    "id": "8",
+    "nombre_completo": "Franz Beckenbauer",
+    "pais_nacimiento": "Alemania",
+    "continente": "Europa",
+    "equipos": [
+      "Bayern Munich",
+      "New York Cosmos",
+      "Hamburgo SV"
+    ],
+    "año_nacimiento": 1945,
+    "campeonatos": [
+      "Copa del Mundo",
+      "Eurocopa",
+      "Champions League"
+    ],
+    "posición_preferida": "Defensa",
+    "camisetas": [
+      "5",
+      "4"
+    ],
+    "leyenda": "TRUE"
+  },
+  {
+    "id": "111",
+    "nombre_completo": "David Beckham",
+    "pais_nacimiento": "Inglaterra",
+    "continente": "Europa",
+    "equipos": [
+      "Manchester United",
+      "Real Madrid",
+      "LA Galaxy",
+      "Paris Saint-Germain"
+    ],
+    "año_nacimiento": 1975,
+    "campeonatos": [
+      "Champions League"
+    ],
+    "posición_preferida": "Medio",
+    "camisetas": "7",
+    "leyenda": "FALSE"
+  },
+  {
+    "id": "72",
+    "nombre_completo": "Sergio (Kun) Agüero",
+    "pais_nacimiento": "Argentina",
+    "continente": "América del Sur",
+    "equipos": [
+      "Independiente",
+      "Atlético de Madrid",
+      "Manchester City",
+      "FC Barcelona"
+    ],
+    "año_nacimiento": 1988,
+    "campeonatos": [
+      "Copa América"
+    ],
+    "posición_preferida": "Delantero",
+    "camisetas": [
+      "10",
+      "16"
+    ],
+    "leyenda": "FALSE"
+  },
+  {
+    "id": "19",
+    "nombre_completo": "Paolo Cesare Maldini",
+    "pais_nacimiento": "Italia",
+    "continente": "Europa",
+    "equipos": [
+      "AC Milan"
+    ],
+    "año_nacimiento": 1968,
+    "campeonatos": [
+      "Champions League"
+    ],
+    "posición_preferida": "Defensa",
+    "camisetas": "3",
+    "leyenda": "FALSE"
+  },
+  {
+    "id": "5",
+    "nombre_completo": "Alfredo Stéfano Di Stéfano Laulhé",
+    "pais_nacimiento": "Argentina",
+    "continente": "América del Sur",
+    "equipos": [
+      "River Plate",
+      "Huracán",
+      "Millonarios",
+      "Real Madrid",
+      "RCD Espanyol"
+    ],
+    "año_nacimiento": 1926,
+    "campeonatos": [
+      "Champions League",
+      "Copa América"
+    ],
+    "posición_preferida": "Delantero",
+    "camisetas": "9",
+    "leyenda": "TRUE"
+  },
+  {
+    "id": "50",
+    "nombre_completo": "Robert Lewandowski",
+    "pais_nacimiento": "Polonia",
+    "continente": "Europa",
+    "equipos": [
+      "Lech Poznań",
+      "Borussia Dortmund",
+      "Bayern Munich",
+      "FC Barcelona"
+    ],
+    "año_nacimiento": 1988,
+    "campeonatos": [
+      "Champions League"
+    ],
+    "posición_preferida": "Delantero",
+    "camisetas": "9",
+    "leyenda": "FALSE"
+  },
+  {
+    "id": "90",
+    "nombre_completo": "Sándor Kocsis",
+    "pais_nacimiento": "Hungría",
+    "continente": "Europa",
+    "equipos": [
+      "Ferencváros",
+      "Budapest Honvéd",
+      "FC Barcelona",
+      "FC Zürich"
+    ],
+    "año_nacimiento": 1929,
+    "campeonatos": [
+      "Ninguno"
+    ],
+    "posición_preferida": "Delantero",
+    "camisetas": "8",
+    "leyenda": "TRUE"
+  },
+  {
+    "id": "93",
+    "nombre_completo": "Philipp Lahm",
+    "pais_nacimiento": "Alemania",
+    "continente": "Europa",
+    "equipos": [
+      "Bayern Munich",
+      "VfB Stuttgart"
+    ],
+    "año_nacimiento": 1983,
+    "campeonatos": [
+      "Copa del Mundo",
+      "Champions League"
+    ],
+    "posición_preferida": "Defensa",
+    "camisetas": [
+      "21",
+      "16"
+    ],
+    "leyenda": "FALSE"
+  },
+  {
+    "id": "26",
+    "nombre_completo": "Lothar Matthäus",
+    "pais_nacimiento": "Alemania",
+    "continente": "Europa",
+    "equipos": [
+      "Borussia Mönchengladbach",
+      "Bayern Munich",
+      "Inter de Milán",
+      "MetroStars"
+    ],
+    "año_nacimiento": 1961,
+    "campeonatos": [
+      "Copa del Mundo"
+    ],
+    "posición_preferida": "Medio",
+    "camisetas": "10",
+    "leyenda": "FALSE"
+  },
+  {
+    "id": "16",
+    "nombre_completo": "Gerhard Müller",
+    "pais_nacimiento": "Alemania",
+    "continente": "Europa",
+    "equipos": [
+      "Bayern Munich",
+      "Fort Lauderdale Strikers"
+    ],
+    "año_nacimiento": 1945,
+    "campeonatos": [
+      "Copa del Mundo",
+      "Eurocopa",
+      "Champions League"
+    ],
+    "posición_preferida": "Delantero",
+    "camisetas": "13",
+    "leyenda": "TRUE"
+  },
+  {
+    "id": "52",
+    "nombre_completo": "Luis Suárez",
+    "pais_nacimiento": "Uruguay",
+    "continente": "América del Sur",
+    "equipos": [
+      "Nacional",
+      "FC Groningen",
+      "Ajax",
+      "Liverpool",
+      "FC Barcelona",
+      "Atlético de Madrid",
+      "Grêmio"
+    ],
+    "año_nacimiento": 1987,
+    "campeonatos": [
+      "Copa América",
+      "Champions League"
+    ],
+    "posición_preferida": "Delantero",
+    "camisetas": [
+      "9",
+      "7",
+      "16",
+      "10"
+    ],
+    "leyenda": "FALSE"
+  },
+  {
+    "id": "42",
+    "nombre_completo": "Daniel Passarella",
+    "pais_nacimiento": "Argentina",
+    "continente": "América del Sur",
+    "equipos": [
+      "River Plate",
+      "ACF Fiorentina",
+      "Inter de Milán"
+    ],
+    "año_nacimiento": 1953,
+    "campeonatos": [
+      "Copa del Mundo"
+    ],
+    "posición_preferida": "Defensa",
+    "camisetas": "6",
+    "leyenda": "TRUE"
+  },
+  {
+    "id": "59",
+    "nombre_completo": "Sir Stanley Matthews",
+    "pais_nacimiento": "Inglaterra",
+    "continente": "Europa",
+    "equipos": [
+      "Stoke City",
+      "Blackpool",
+      "Toronto City"
+    ],
+    "año_nacimiento": 1915,
+    "campeonatos": [
+      "Ninguno"
+    ],
+    "posición_preferida": "Extremo",
+    "camisetas": "7",
+    "leyenda": "TRUE"
+  },
+  {
+    "id": "15",
+    "nombre_completo": "Marco van Basten",
+    "pais_nacimiento": "Países Bajos",
+    "continente": "Europa",
+    "equipos": [
+      "Ajax",
+      "AC Milan"
+    ],
+    "año_nacimiento": 1964,
+    "campeonatos": [
+      "Eurocopa",
+      "Champions League"
+    ],
+    "posición_preferida": "Delantero",
+    "camisetas": "9",
+    "leyenda": "FALSE"
+  },
+  {
+    "id": "21",
+    "nombre_completo": "Luka Modrić",
+    "pais_nacimiento": "Croacia",
+    "continente": "Europa",
+    "equipos": [
+      "Dinamo Zagreb",
+      "Tottenham Hotspur",
+      "Real Madrid"
+    ],
+    "año_nacimiento": 1985,
+    "campeonatos": [
+      "Champions League"
+    ],
+    "posición_preferida": "Medio",
+    "camisetas": [
+      "10",
+      "14"
+    ],
+    "leyenda": "FALSE"
+  },
+  {
+    "id": "92",
+    "nombre_completo": "Josef Masopust",
+    "pais_nacimiento": "Checoslovaquia",
+    "continente": "Europa",
+    "equipos": [
+      "Dukla Praga"
+    ],
+    "año_nacimiento": 1931,
+    "campeonatos": [
+      "Ninguno"
+    ],
+    "posición_preferida": "Medio",
+    "camisetas": "6",
+    "leyenda": "TRUE"
+  },
+  {
+    "id": "49",
+    "nombre_completo": "Andriy Shevchenko",
+    "pais_nacimiento": "Ucrania",
+    "continente": "Europa",
+    "equipos": [
+      "Dynamo Kyiv",
+      "AC Milan",
+      "Chelsea"
+    ],
+    "año_nacimiento": 1976,
+    "campeonatos": [
+      "Champions League"
+    ],
+    "posición_preferida": "Delantero",
+    "camisetas": "7",
+    "leyenda": "FALSE"
+  },
+  {
+    "id": "73",
+    "nombre_completo": "Andrea Pirlo",
+    "pais_nacimiento": "Italia",
+    "continente": "Europa",
+    "equipos": [
+      "Brescia",
+      "Inter de Milán",
+      "Reggina",
+      "AC Milan",
+      "Juventus",
+      "New York City FC"
+    ],
+    "año_nacimiento": 1979,
+    "campeonatos": [
+      "Copa del Mundo",
+      "Champions League"
+    ],
+    "posición_preferida": "Medio",
+    "camisetas": "21",
+    "leyenda": "FALSE"
+  },
+  {
+    "id": "44",
+    "nombre_completo": "Karim Benzema",
+    "pais_nacimiento": "Francia",
+    "continente": "Europa",
+    "equipos": [
+      "Olympique Lyonnais",
+      "Real Madrid",
+      "Al-Ittihad"
+    ],
+    "año_nacimiento": 1987,
+    "campeonatos": [
+      "Champions League",
+      "Liga de Naciones"
+    ],
+    "posición_preferida": "Delantero",
+    "camisetas": [
+      "9",
+      "10",
+      "19"
+    ],
+    "leyenda": "FALSE"
+  },
+  {
+    "id": "66",
+    "nombre_completo": "Pavel Nedved",
+    "pais_nacimiento": "Chequia",
+    "continente": "Europa",
+    "equipos": [
+      "FK Dukla Praga",
+      "Sparta Praga",
+      "SS Lazio",
+      "Juventus"
+    ],
+    "año_nacimiento": 1972,
+    "campeonatos": [
+      "Ninguno"
+    ],
+    "posición_preferida": "Medio",
+    "camisetas": [
+      "10",
+      "11"
+    ],
+    "leyenda": "FALSE"
+  },
+  {
+    "id": "76",
+    "nombre_completo": "Francesco Totti",
+    "pais_nacimiento": "Italia",
+    "continente": "Europa",
+    "equipos": [
+      "AS Roma"
+    ],
+    "año_nacimiento": 1976,
+    "campeonatos": [
+      "Copa del Mundo"
+    ],
+    "posición_preferida": "Delantero",
+    "camisetas": "10",
+    "leyenda": "FALSE"
+  },
+  {
+    "id": "65",
+    "nombre_completo": "Dennis Bergkamp",
+    "pais_nacimiento": "Países Bajos",
+    "continente": "Europa",
+    "equipos": [
+      "Ajax",
+      "Inter de Milán",
+      "Arsenal"
+    ],
+    "año_nacimiento": 1969,
+    "campeonatos": [
+      "Ninguno"
+    ],
+    "posición_preferida": "Delantero",
+    "camisetas": "10",
+    "leyenda": "FALSE"
+  },
+  {
+    "id": "20",
+    "nombre_completo": "Romário de Souza Faria",
+    "pais_nacimiento": "Brasil",
+    "continente": "América del Sur",
+    "equipos": [
+      "Vasco da Gama",
+      "PSV Eindhoven",
+      "FC Barcelona",
+      "Flamengo",
+      "Valencia CF",
+      "Fluminense",
+      "Al-Sadd",
+      "Miami FC",
+      "Adelaide United"
+    ],
+    "año_nacimiento": 1966,
+    "campeonatos": [
+      "Copa del Mundo",
+      "Copa América"
+    ],
+    "posición_preferida": "Delantero",
+    "camisetas": [
+      "11",
+      "10"
+    ],
+    "leyenda": "FALSE"
+  },
+  {
+    "id": "24",
+    "nombre_completo": "Lev Ivánovich Yashin",
+    "pais_nacimiento": "URSS",
+    "continente": "Europa",
+    "equipos": [
+      "Dinamo Moscú"
+    ],
+    "año_nacimiento": 1929,
+    "campeonatos": [
+      "Eurocopa"
+    ],
+    "posición_preferida": "Portero",
+    "camisetas": "1",
+    "leyenda": "TRUE"
+  },
+  {
+    "id": "45",
+    "nombre_completo": "Karl-Heinz Rummenigge",
+    "pais_nacimiento": "Alemania",
+    "continente": "Europa",
+    "equipos": [
+      "Bayern Munich",
+      "Inter de Milán",
+      "Servette FC"
+    ],
+    "año_nacimiento": 1955,
+    "campeonatos": [
+      "Eurocopa",
+      "Champions League"
+    ],
+    "posición_preferida": "Delantero",
+    "camisetas": "11",
+    "leyenda": "TRUE"
+  },
+  {
+    "id": "33",
+    "nombre_completo": "Gianluigi Buffon",
+    "pais_nacimiento": "Italia",
+    "continente": "Europa",
+    "equipos": [
+      "Parma",
+      "Juventus",
+      "Paris Saint-Germain"
+    ],
+    "año_nacimiento": 1978,
+    "campeonatos": [
+      "Copa del Mundo"
+    ],
+    "posición_preferida": "Portero",
+    "camisetas": [
+      "1",
+      "77",
+      "88",
+      "30"
+    ],
+    "leyenda": "FALSE"
+  },
+  {
+    "id": "106",
+    "nombre_completo": "Juan Román Riquelme",
+    "pais_nacimiento": "Argentina",
+    "continente": "América del Sur",
+    "equipos": [
+      "Argentinos Juniors",
+      "Boca Juniors",
+      "FC Barcelona",
+      "Villarreal CF"
+    ],
+    "año_nacimiento": 1978,
+    "campeonatos": [
+      "Copa Libertadores"
+    ],
+    "posición_preferida": "Medio",
+    "camisetas": "10",
+    "leyenda": "FALSE"
+  },
+  {
+    "id": "74",
+    "nombre_completo": "Wayne Rooney",
+    "pais_nacimiento": "Inglaterra",
+    "continente": "Europa",
+    "equipos": [
+      "Everton",
+      "Manchester United",
+      "DC United",
+      "Derby County"
+    ],
+    "año_nacimiento": 1985,
+    "campeonatos": [
+      "Champions League"
+    ],
+    "posición_preferida": "Delantero",
+    "camisetas": "10",
+    "leyenda": "FALSE"
+  },
+  {
+    "id": "12",
+    "nombre_completo": "Mane (Garrincha)",
+    "pais_nacimiento": "Brasil",
+    "continente": "América del Sur",
+    "equipos": [
+      "Botafogo",
+      "Junior Barranquilla"
+    ],
+    "año_nacimiento": 1933,
+    "campeonatos": [
+      "Copa del Mundo"
+    ],
+    "posición_preferida": "Extremo",
+    "camisetas": [
+      "7",
+      "11"
+    ],
+    "leyenda": "TRUE"
+  },
+  {
+    "id": "61",
+    "nombre_completo": "José Manuel Moreno Fernández",
+    "pais_nacimiento": "Argentina",
+    "continente": "América del Sur",
+    "equipos": [
+      "River Plate",
+      "RCD Espanyol",
+      "Universidad Católica",
+      "Boca Juniors",
+      "Defensor Sporting",
+      "Ferrocarril Oeste"
+    ],
+    "año_nacimiento": 1916,
+    "campeonatos": [
+      "Copa América"
+    ],
+    "posición_preferida": "Medio",
+    "camisetas": "10",
+    "leyenda": "TRUE"
+  },
+  {
+    "id": "54",
+    "nombre_completo": "Mario Alberto Kempes",
+    "pais_nacimiento": "Argentina",
+    "continente": "América del Sur",
+    "equipos": [
+      "Instituto",
+      "Rosario Central",
+      "Valencia CF",
+      "River Plate",
+      "Hércules CF",
+      "Vienna FC",
+      "Sankt Pölten"
+    ],
+    "año_nacimiento": 1954,
+    "campeonatos": [
+      "Copa del Mundo"
+    ],
+    "posición_preferida": "Delantero",
+    "camisetas": "10",
+    "leyenda": "TRUE"
+  },
+  {
+    "id": "41",
+    "nombre_completo": "Carlos Alberto",
+    "pais_nacimiento": "Brasil",
+    "continente": "América del Sur",
+    "equipos": [
+      "Fluminense",
+      "Santos FC",
+      "New York Cosmos",
+      "California Surf"
+    ],
+    "año_nacimiento": 1944,
+    "campeonatos": [
+      "Copa del Mundo"
+    ],
+    "posición_preferida": "Defensa",
+    "camisetas": "4",
+    "leyenda": "TRUE"
+  },
+  {
+    "id": "34",
+    "nombre_completo": "Iker Casillas",
+    "pais_nacimiento": "España",
+    "continente": "Europa",
+    "equipos": [
+      "Real Madrid",
+      "FC Porto"
+    ],
+    "año_nacimiento": 1981,
+    "campeonatos": [
+      "Copa del Mundo",
+      "Eurocopa",
+      "Champions League"
+    ],
+    "posición_preferida": "Portero",
+    "camisetas": "1",
+    "leyenda": "FALSE"
   }
 ]

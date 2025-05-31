@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertidor JSON a CSV / CSV a JSON</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        textarea {
+            width: 100%;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+            font-family: monospace;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Convertidor JSON de Jugadores a CSV</h3>
+    <section>
+        <label for="jsonInput">Pega aquí tu JSON de jugadores:</label>
+        <textarea id="jsonInput" rows="10" placeholder="[ {\n  \" nombre_completo\": \"Lionel Andrés Messi Cuccittini\",
+            ... } ]"></textarea>
+        <button id="convertBtn">Convertir a CSV</button>
+        <label for="csvOutput">Resultado CSV:</label>
+        <textarea id="csvOutput" rows="10" readonly placeholder="Aquí aparecerá el CSV generado..."></textarea>
+
+        <label for="distinctTeamsOutput">Equipos Distintos:</label>
+        <textarea id="distinctTeamsOutput" rows="5" readonly
+            placeholder="Aquí aparecerán los equipos únicos..."></textarea>
+
+        <label for="distinctCupsOutput">Campeonatos Distintos:</label>
+        <textarea id="distinctCupsOutput" rows="5" readonly
+            placeholder="Aquí aparecerán los campeonatos únicos..."></textarea>
+
+        <label for="distinctColumnsCsvOutput">CSV con Valores Distintos por Columna:</label>
+        <textarea id="distinctColumnsCsvOutput" rows="10" readonly
+            placeholder="Aquí aparecerá el CSV de valores distintos..."></textarea>
+    </section>
+
+    <h3>Convertidor CSV de Jugadores a JSON</h3>
+    <section>
+        <label for="csvInput">Pega aquí tu CSV de jugadores:</label>
+        <textarea id="csvInput" rows="10" placeholder=""></textarea>
+        <button id="convertToJsonBtn">Convertir a JSON</button>
+        <label for="jsonOutput">Resultado JSON:</label>
+        <textarea id="jsonOutput" rows="10" readonly placeholder="Aquí aparecerá el JSON generado..."></textarea>
+    </section>
+
+    <script>
+        function escapeCSV(value) {
+            if (value == null) return '';
+            const text = String(value).replace(/\"/g, '\"\"');
+            return '"' + text + '"';
+        }
+
+        function arrayToField(arr) {
+            return arr.map(item => String(item)).join(';');
+        }
+
+        // JSON a CSV y valores distintos
+        document.getElementById('convertBtn').addEventListener('click', () => {
+            const input = document.getElementById('jsonInput').value.trim();
+            if (!input) {
+                alert('Por favor, ingresa un JSON válido.');
+                return;
+            }
+
+            let data;
+            try {
+                data = JSON.parse(input);
+                if (!Array.isArray(data)) throw new Error();
+            } catch (e) {
+                alert('JSON inválido. Verifica la sintaxis.');
+                return;
+            }
+
+            // Generar CSV principal
+            const keys = Object.keys(data[0]);
+            const rows = [];
+            rows.push(keys.map(k => escapeCSV(k)).join(','));
+            data.forEach(obj => {
+                const values = keys.map(key => {
+                    let val = obj[key];
+                    if (Array.isArray(val)) {
+                        val = arrayToField(val);
+                    }
+                    return escapeCSV(val);
+                });
+                rows.push(values.join(','));
+            });
+            document.getElementById('csvOutput').value = rows.join('\n');
+
+            // Valores distintos para Equipos, Campeonatos y Posición Preferida
+            const allTeams = data.flatMap(obj => Array.isArray(obj.equipos) ? obj.equipos : []);
+            const distinctTeams = Array.from(new Set(allTeams)).sort();
+            document.getElementById('distinctTeamsOutput').value = distinctTeams.join('\n');
+
+            const allCups = data.flatMap(obj => Array.isArray(obj.campeonatos) ? obj.campeonatos : []);
+            const distinctCups = Array.from(new Set(allCups)).sort();
+            document.getElementById('distinctCupsOutput').value = distinctCups.join('\n');
+
+            const distinctPositions = Array.from(new Set(data.map(obj => obj.posición_preferida))).sort();
+
+            // CSV con valores distintos por cada columna
+            const distinctNames = Array.from(new Set(data.map(obj => obj.nombre_completo))).sort();
+            const distinctCountries = Array.from(new Set(data.map(obj => obj.pais_nacimiento))).sort();
+            const distinctContinents = Array.from(new Set(data.map(obj => obj.continente))).sort();
+            const distinctYears = Array.from(new Set(data.map(obj => obj.año_nacimiento))).sort((a, b) => a - b);
+
+            const distinctColumns = {
+                nombre_completo: distinctNames,
+                pais_nacimiento: distinctCountries,
+                continente: distinctContinents,
+                equipos: distinctTeams,
+                campeonatos: distinctCups,
+                posición_preferida: distinctPositions,
+                año_nacimiento: distinctYears
+            };
+
+            const colKeys = Object.keys(distinctColumns);
+            const maxLen = Math.max(...colKeys.map(k => distinctColumns[k].length));
+            const distinctRows = [];
+            distinctRows.push(colKeys.map(k => escapeCSV(k)).join(','));
+            for (let i = 0; i < maxLen; i++) {
+                const rowVals = colKeys.map(k => {
+                    const arr = distinctColumns[k];
+                    const val = arr[i] !== undefined ? arr[i] : '';
+                    return escapeCSV(val);
+                });
+                distinctRows.push(rowVals.join(','));
+            }
+            document.getElementById('distinctColumnsCsvOutput').value = distinctRows.join('\n');
+        });
+
+        // CSV a JSON
+        function parseCSVLine(line) {
+            const result = [];
+            let current = '';
+            let inQuotes = false;
+            for (let i = 0; i < line.length; i++) {
+                const char = line[i];
+                if (char === '"') {
+                    if (inQuotes && line[i + 1] === '"') {
+                        current += '"';
+                        i++;
+                    } else {
+                        inQuotes = !inQuotes;
+                    }
+                } else if (char === ',' && !inQuotes) {
+                    result.push(current);
+                    current = '';
+                } else {
+                    current += char;
+                }
+            }
+            result.push(current);
+            return result;
+        }
+
+        document.getElementById('convertToJsonBtn').addEventListener('click', () => {
+            const csvText = document.getElementById('csvInput').value.trim();
+            if (!csvText) {
+                alert('Por favor, ingresa un CSV válido.');
+                return;
+            }
+            const lines = csvText.split(/\r?\n/).filter(l => l.trim() !== '');
+            if (lines.length < 2) {
+                alert('El CSV debe tener al menos encabezado y una fila de datos.');
+                return;
+            }
+
+            const headerFields = parseCSVLine(lines[0]);
+            const keys = headerFields.map(field => field.replace(/^"|"$/g, ''));
+            const jsonArray = [];
+
+            for (let i = 1; i < lines.length; i++) {
+                const values = parseCSVLine(lines[i]);
+                const obj = {};
+                for (let j = 0; j < keys.length; j++) {
+                    let raw = values[j] || '';
+                    if (raw.startsWith('"') && raw.endsWith('"')) {
+                        raw = raw.slice(1, -1);
+                    }
+                    raw = raw.replace(/""/g, '"');
+                    if (keys[j] === 'equipos' || keys[j] === 'campeonatos') {
+                        obj[keys[j]] = raw === '' ? [] : raw.split(';').map(item => item);
+                    } else if (raw.includes(';')) {
+                        obj[keys[j]] = raw.split(';').map(item => item);
+                    } else {
+                        if (keys[j] === 'año_nacimiento' && raw !== '' && !isNaN(raw)) {
+                            obj[keys[j]] = Number(raw);
+                        } else {
+                            obj[keys[j]] = raw;
+                        }
+                    }
+                }
+                jsonArray.push(obj);
+            }
+
+            document.getElementById('jsonOutput').value = JSON.stringify(jsonArray, null, 2);
+        });
+    </script>
+</body>
+
+</html>

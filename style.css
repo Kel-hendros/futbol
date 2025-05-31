@@ -17,6 +17,8 @@ body {
     background-repeat: repeat;
     background-size: 400px 400px;
 
+    padding-bottom: 500px;
+    overflow-y: auto;
 }
 
 .debugger {
@@ -48,13 +50,11 @@ body {
     justify-self: center;
     width: 90%;
     max-width: 800px;
-    margin: 15px;
-    padding: 10px;
-    height: 100%;
+    margin-inline: 10px;
+    margin-top: 20px;
+    padding: 5px;
+    padding-bottom: 50PX;
     text-align: center;
-
-    /* background: rgba(255, 255, 255, 0.545); */
-    /* background con degradados en trasparente como efecto de vidrio */
     background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.601), rgba(255, 255, 255, 0.098));
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.457);
@@ -137,10 +137,17 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    box-shadow: 0 5px 2px rgba(0, 0, 0, 0.233), inset 0 5px 3px rgba(255, 255, 255, 0.233), inset 0 -5px 10px rgba(19, 38, 57, 0.519);
+
 }
 
 #seleccionarBtn:hover {
     background-color: #316a7b;
+}
+
+#seleccionarBtn:active {
+    background-color: #2a5a6b;
+    box-shadow: 0 2px 2px rgba(255, 255, 255, 0.219), inset 0px 8px 8px -5px rgba(0, 0, 0, 0.399), 0 -2px 1px rgba(255, 255, 255, 0.233);
 }
 
 
@@ -228,6 +235,7 @@ body {
     align-items: center;
     justify-content: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.734);
+    cursor: pointer;
 }
 
 .titulo {
@@ -313,6 +321,14 @@ body {
 
 }
 
+.imagen-jugador {
+    width: 200px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    margin-bottom: 20px;
+    border: solid 4px #d7e633;
+}
+
 .proximoJugador {
     font-size: .8rem;
     padding: 10px;
@@ -368,8 +384,8 @@ body {
     top: -10px;
     right: -10px;
     z-index: 1000;
-    background-color: #062c0d;
-    color: white;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
     border: none;
     border-radius: 50%;
     width: 30px;
@@ -379,6 +395,7 @@ body {
     justify-content: center;
     cursor: pointer;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    font-weight: bolder;
 }
 
 .help-popup {
@@ -444,6 +461,38 @@ body {
 .compartir-alert.oculto {
     display: none;
 }
+
+
+.sugerencia-imagen {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 8px;
+    vertical-align: middle;
+    border: 1px solid #000000;
+
+}
+
+#sugerencias p {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.nombre-con-imagen {
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 1px 3px rgb(0, 0, 0);
+}
+
 
 
 /* Media Queries */

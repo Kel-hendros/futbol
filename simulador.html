@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Simulador Jugador del Día</title>
+</head>
+
+<body>
+    <h1>Próximos 120 días - Jugador del Día (rotación por orden del JSON)</h1>
+    <input type="file" id="archivoJSON" accept="application/json" />
+    <button id="simularBtn">Mostrar</button>
+    <button id="desordenarBtn">Desordenar y mostrar JSON</button>
+    <pre id="salida"></pre>
+    <textarea id="jsonOutput" rows="20" cols="100" style="display:none; margin-top: 20px;"></textarea>
+
+    <script>
+        const FECHA_BASE = new Date("2025-05-31T00:00:00Z");
+        let jugadoresOriginales = [];
+
+        function avanzarFecha(fechaStr) {
+            const fecha = new Date(fechaStr + "T00:00:00Z");
+            const siguiente = new Date(fecha.getTime() + 86400000);
+            return siguiente.toISOString().slice(0, 10);
+        }
+
+        function calcularIndexDesdeFechaBase(fechaISO, jugadoresLength) {
+            const fechaActual = new Date(fechaISO + "T00:00:00Z");
+            const diffDias = Math.floor((fechaActual - FECHA_BASE) / 86400000);
+            return ((diffDias % jugadoresLength) + jugadoresLength) % jugadoresLength;
+        }
+
+        function desordenarArray(array) {
+            const copia = [...array];
+            for (let i = copia.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [copia[i], copia[j]] = [copia[j], copia[i]];
+            }
+            return copia;
+        }
+
+        document.getElementById('simularBtn').addEventListener('click', () => {
+            if (jugadoresOriginales.length === 0) {
+                alert("Subí un archivo JSON de jugadores primero");
+                return;
+            }
+
+            const salida = document.getElementById('salida');
+            let resultados = [];
+            let fecha = new Date().toISOString().slice(0, 10);
+
+            for (let i = 0; i < 120; i++) {
+                const index = calcularIndexDesdeFechaBase(fecha, jugadoresOriginales.length);
+                const jugador = jugadoresOriginales[index];
+                resultados.push(`${fecha} → [${index}] ID ${jugador.id} - ${jugador.nombre_completo}`);
+                fecha = avanzarFecha(fecha);
+            }
+
+            salida.textContent = resultados.join("\n");
+        });
+
+        document.getElementById('desordenarBtn').addEventListener('click', () => {
+            if (jugadoresOriginales.length === 0) {
+                alert("Subí un archivo JSON de jugadores primero");
+                return;
+            }
+            const desordenados = desordenarArray(jugadoresOriginales);
+            const textarea = document.getElementById('jsonOutput');
+            textarea.value = JSON.stringify(desordenados, null, 2);
+            textarea.style.display = 'block';
+        });
+
+        document.getElementById('archivoJSON').addEventListener('change', (e) => {
+            const reader = new FileReader();
+            reader.onload = (event) => {
+                jugadoresOriginales = JSON.parse(event.target.result);
+                document.getElementById('salida').textContent = "Archivo cargado correctamente.";
+            };
+            reader.readAsText(e.target.files[0]);
+        });
+    </script>
+</body>
+
+</html>
