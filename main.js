@@ -482,7 +482,7 @@ function mostrarResultadoFinal() {
           .share({
             title: "Jugador del día",
             text: mensaje,
-            url: "https://mi-juego-futbol.com",
+            url: "https://kel-hendros.github.io/futbol/",
           })
           .catch((error) => console.log("Error al compartir:", error));
       }
