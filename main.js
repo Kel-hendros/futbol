@@ -27,25 +27,13 @@ async function cargarJugadores() {
 }
 
 async function elegirJugadorDelDia() {
-  try {
-    const res = await fetch(
-      "https://timeapi.io/api/Time/current/zone?timeZone=UTC"
-    );
-    const data = await res.json();
-    const ahoraUTC = new Date(data.dateTime);
-    const yyyyMMdd = ahoraUTC.toISOString().slice(0, 10);
-    const seed = parseInt(yyyyMMdd.replace(/-/g, ""), 10);
-    const index = seed % jugadores.length;
-    return { jugador: jugadores[index], ahoraUTC };
-  } catch (error) {
-    console.error("Error obteniendo hora UTC:", error);
-    // Fallback local
-    const hoy = new Date();
-    const yyyyMMdd = hoy.toISOString().slice(0, 10);
-    const seed = parseInt(yyyyMMdd.replace(/-/g, ""), 10);
-    const index = seed % jugadores.length;
-    return { jugador: jugadores[index], ahoraUTC: hoy };
-  }
+  const ahoraLocal = new Date();
+  const offsetMinutos = ahoraLocal.getTimezoneOffset(); // en minutos
+  const ahoraUTC = new Date(ahoraLocal.getTime() + offsetMinutos * 60000);
+  const yyyyMMdd = ahoraUTC.toISOString().slice(0, 10);
+  const seed = parseInt(yyyyMMdd.replace(/-/g, ""), 10);
+  const index = seed % jugadores.length;
+  return { jugador: jugadores[index], ahoraUTC };
 }
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -106,21 +94,12 @@ function evaluarIntento(jugador) {
   intentos.push(jugador);
   guardarEstadoJuego();
 
-  const container = document.getElementById("intentos");
-
-  // Si no hay encabezado aún, agregarlo una vez
-  if (!document.querySelector("#intentos .fila-header")) {
-    container.appendChild(crearEncabezado(HEADERS_CON_ICONOS, true));
-  }
-
-  const filaValores = crearFilaValores(jugador, intentos.length, jugadorDelDia);
-  container.insertBefore(filaValores, container.children[1]);
+  agregarIntento(jugador);
 
   // Mostrar resultado si es correcto
   if (jugador.nombre_completo === jugadorDelDia.nombre_completo) {
     adivinado = true;
-    const buscador = document.getElementById("buscadorContainer");
-    buscador.classList.add("oculto");
+    ocultarInputsDeJuego();
     guardarEstadoJuego();
 
     confetti({
@@ -128,71 +107,7 @@ function evaluarIntento(jugador) {
       spread: 100,
       origin: { y: 0.6 },
     });
-    const resultado = document.getElementById("resultadoFinal");
-    let resuelto = "";
-    resultado.classList.remove("oculto");
-    if (intentos.length === 1) {
-      resuelto = " intento!";
-    } else {
-      resuelto = " intentos!";
-    }
-    resultado.innerHTML = `
-      <h2>🎉 ${jugadorDelDia.nombre_completo} 🎉</h2>
-      <div class="resuelto">
-        <p>Resuelto en ${intentos.length}${resuelto}</p>
-        <div class="compartir">
-            <button id="compartirBtn">Compartir</button>
-            <span class="compartir-alert oculto">Copiado al portapapeles</span>
-        </div>
-    </div>
-        
-        <div class="proximoJugador">Nuevo jugador en <span id="contadorTiempo"></span></div>
-    `;
-    // Compartir al hacer clic
-    document.addEventListener("click", function (e) {
-      if (e.target && e.target.id === "compartirBtn") {
-        const fecha = new Date()
-          .toISOString()
-          .slice(0, 10)
-          .split("-")
-          .reverse()
-          .join("/");
-        const intentosRealizados = intentos.length;
-        const mensaje = `⚽ Encontré al jugador de fútbol del ${fecha} en solo ${intentosRealizados} intento${
-          intentosRealizados > 1 ? "s" : ""
-        }!\n🔗 https://mi-juego-futbol.com`;
-
-        navigator.clipboard.writeText(mensaje).then(() => {
-          console.log("Mensaje copiado al portapapeles no matter what");
-          const alertSpan = document.querySelector(".compartir-alert");
-          alertSpan.classList.remove("oculto");
-          setTimeout(() => {
-            alertSpan.classList.add("oculto");
-          }, 3000);
-        });
-
-        if (navigator.share) {
-          navigator
-            .share({
-              title: "Jugador del día",
-              text: mensaje,
-              url: "https://mi-juego-futbol.com",
-            })
-            .catch((error) => console.log("Error al compartir:", error));
-        } else {
-          alert("¡Mensaje copiado al portapapeles!");
-        }
-      }
-    });
-    // Iniciar el contador con la hora actual UTC
-    iniciarContadorUTC(new Date());
-    // Asegurarse de que el contador sea visible
-    const contadorSpan = document.getElementById("contadorTiempo");
-    if (contadorSpan) {
-      contadorSpan.classList.remove("oculto");
-    }
-    // Asegurarse de que el contenedor de resultado final también sea visible
-    resultado.classList.remove("oculto");
+    mostrarResultadoFinal();
   }
 }
 
@@ -402,8 +317,6 @@ function cargarEstadoGuardado() {
     intentos.forEach((j) => agregarIntento(j));
     if (adivinado) {
       mostrarResultadoFinal();
-      document.getElementById("buscador").style.display = "none";
-      document.getElementById("seleccionarBtn").style.display = "none";
     }
   }
 }
@@ -449,43 +362,54 @@ function mostrarResultadoFinal() {
 
   iniciarContadorUTC(new Date());
 
-  const spanContador = document.getElementById("contadorTiempo");
-  if (spanContador) spanContador.classList.remove("oculto");
-
-  document.getElementById("buscador").style.display = "none";
-  document.getElementById("seleccionarBtn").style.display = "none";
+  ocultarInputsDeJuego();
 
   const btnCompartir = document.getElementById("compartirBtn");
   if (btnCompartir) {
-    btnCompartir.addEventListener("click", () => {
-      const fecha = new Date()
-        .toISOString()
-        .slice(0, 10)
-        .split("-")
-        .reverse()
-        .join("/");
-      const intentosRealizados = intentos.length;
-      const mensaje = `⚽ Encontré al jugador de fútbol del ${fecha} en solo ${intentosRealizados} intento${
-        intentosRealizados > 1 ? "s" : ""
-      }!\n🔗 https://kel-hendros.github.io/futbol/`;
+    btnCompartir.addEventListener("click", manejarCompartir);
+  }
+}
 
-      navigator.clipboard.writeText(mensaje).then(() => {
-        const alertSpan = document.querySelector(".compartir-alert");
-        alertSpan.classList.remove("oculto");
-        setTimeout(() => {
-          alertSpan.classList.add("oculto");
-        }, 3000);
-      });
+function ocultarInputsDeJuego() {
+  const buscador = document.getElementById("buscador");
+  const seleccionarBtn = document.getElementById("seleccionarBtn");
+  if (buscador) buscador.style.display = "none";
+  if (seleccionarBtn) seleccionarBtn.style.display = "none";
+}
 
-      if (navigator.share) {
-        navigator
-          .share({
-            title: "Jugador del día",
-            text: mensaje,
-            url: "https://kel-hendros.github.io/futbol/",
-          })
-          .catch((error) => console.log("Error al compartir:", error));
-      }
-    });
+function crearMensajeCompartir() {
+  const fecha = new Date()
+    .toISOString()
+    .slice(0, 10)
+    .split("-")
+    .reverse()
+    .join("/");
+  const intentosRealizados = intentos.length;
+  return `⚽ Encontré al jugador de fútbol del ${fecha} en solo ${intentosRealizados} intento${
+    intentosRealizados > 1 ? "s" : ""
+  }!\n🔗 https://kel-hendros.github.io/futbol/`;
+}
+
+function manejarCompartir() {
+  const mensaje = crearMensajeCompartir();
+
+  navigator.clipboard.writeText(mensaje).then(() => {
+    const alertSpan = document.querySelector(".compartir-alert");
+    if (alertSpan) {
+      alertSpan.classList.remove("oculto");
+      setTimeout(() => {
+        alertSpan.classList.add("oculto");
+      }, 3000);
+    }
+  });
+
+  if (navigator.share) {
+    navigator
+      .share({
+        title: "Jugador del día",
+        text: mensaje,
+        url: "https://kel-hendros.github.io/futbol/",
+      })
+      .catch((error) => console.log("Error al compartir:", error));
   }
 }

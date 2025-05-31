@@ -343,6 +343,7 @@
   {
     "nombre_completo": "Roberto Carlos da Silva Rocha",
     "pais_nacimiento": "Brasil",
+    "continente": "América del Sur",
     "equipos": ["União São João", "Palmeiras", "Inter de Milán", "Real Madrid", "Fenerbahçe", "Corinthians", "Anzhi Makhachkala", "Delhi Dynamos"],
     "año_nacimiento": 1973,
     "campeonatos": ["Copa del Mundo", "Copa América", "Champions League"],
