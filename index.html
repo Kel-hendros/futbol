@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>¿Quién es el jugador?</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div id="debugger" class="debugger">
+        <h2>Debug</h2>
+        <p id="jugadorCorrecto"></p>
+    </div>
+    <div class="container">
+        <button id="helpBtn" class="help-button">?</button>
+        <h1>⚽ Adiviná el jugador del día ⚽</h1>
+        <div id="buscadorContainer" class="buscador-container">
+            <input type="text" id="buscador" placeholder="Escribí el nombre del jugador..." autocomplete="off" />
+            <div id="sugerencias" class="oculto"></div>
+            <button id="seleccionarBtn">Seleccionar</button>
+        </div>
+        <div id="resultadoFinal" class="oculto"></div>
+        <div id="intentos"></div>
+
+    </div>
+    <dialog id="helpModal" class="help-popup">
+        <button id="closeHelpBtn">X</button>
+        <h2>Instrucciones</h2>
+        <p>El objetivo del juego es adivinar el nombre del jugador del día en la menor cantidad de intentos posible.</p>
+        <p>Podés escribir el nombre en el buscador y seleccionar uno de los sugeridos.</p>
+        <p>Cada tarjeta agrega pistas:</p>
+        <p><strong>🌎 Pais de origen:</strong> Si el pais coincide, es verde. Si el continente coincide, es amarilla. De
+            lo
+            contrario es
+            tarjeta roja.</p>
+        <p><strong>🗓️ Año de nacimiento:</strong> Si el año coincide, es verde. Sino, es amarilla e indica con una
+            flecha
+            si hay que buscar
+            más arriba o más abajo.</p>
+        <p><strong>🎽 Equipo:</strong> Si al menos un equipo coincide con el del Jugador del Dia, será tarjeta amarilla.
+            Si
+            ningún equipo
+            coincide, tarjeta roja.</p>
+        <p><strong>🏆 Campeonatos:</strong> Solo se toman en cuenta las siguientes copas:</p>
+        <ul>
+            <li>Champions League</li>
+            <li>Copa Africana de Naciones</li>
+            <li>Copa América</li>
+            <li>Copa Libertadores</li>
+            <li>Copa del Mundo</li>
+            <li>Eurocopa</li>
+            <li>Liga de Naciones</li>
+        </ul>
+        Puede haber jugadores sin ninguna copa.
+        <p>Si al menos una copa coincide, es tarjeta amarilla, sino tarjeta roja.</p>
+        <p><strong>🔀 Posición:</strong> Si la posición coincide, es tarjeta verde. Si no, es tarjeta roja. Se usa la
+            posición más
+            iconica
+            del jugador, y puede ser una de las siguientes:</p>
+        <ul>
+            <li>Delantero</li>
+            <li>Defensa</li>
+            <li>Portero</li>
+            <li>Extremo</li>
+            <li>Medio</li>
+        </ul>
+
+
+
+    </dialog>
+
+
+    <script src="main.js"></script>
+
+
+    <div class="bmc-container">
+        <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js"
+            data-name="bmc-button" data-slug="vlkam9t" data-color="#FFDD00" data-emoji="" data-font="Bree"
+            data-text="Colaborame con un gatorade" data-outline-color="#000000" data-font-color="#000000"
+            data-coffee-color="#ffffff">
+            </script>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</body>
+
+
+</html>

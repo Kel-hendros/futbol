@@ -1,0 +1,515 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600&display=swap');
+
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Titillium Web', sans-serif;
+
+    background-image: url("cesped.png");
+    background-repeat: repeat;
+    background-size: 400px 400px;
+
+}
+
+.debugger {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+#jugadorCorrecto {
+    display: flex;
+    width: 80%;
+}
+
+.tabla-jugador {
+    width: 100%;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    justify-self: center;
+    width: 90%;
+    max-width: 800px;
+    margin: 15px;
+    padding: 10px;
+    height: 100%;
+    text-align: center;
+
+    /* background: rgba(255, 255, 255, 0.545); */
+    /* background con degradados en trasparente como efecto de vidrio */
+    background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.601), rgba(255, 255, 255, 0.098));
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.457);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.457);
+}
+
+.buscador-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+}
+
+.buscador-container.oculto {
+    display: none;
+}
+
+#buscador {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 0px;
+    border-radius: 10px;
+}
+
+#intentos {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    overflow-x: auto;
+    width: 100%;
+}
+
+#sugerencias {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 79%;
+    padding: 10px;
+    background-color: #ffffff;
+    border-left: 1px solid #9b9b9b;
+    border-right: 1px solid #9b9b9b;
+    border-bottom: 1px solid #9b9b9b;
+    box-shadow: inset 0px 8px 8px -5px rgba(0, 0, 0, 0.399);
+    font-size: .8rem;
+
+}
+
+#sugerencias p {
+    margin: 0;
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+    color: #333;
+
+}
+
+#sugerencias p:hover {
+    background-color: #e0e0e0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+#sugerencias.oculto {
+    display: none;
+}
+
+#seleccionarBtn {
+    width: 80%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #387c90;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#seleccionarBtn:hover {
+    background-color: #316a7b;
+}
+
+
+.contenedor-intentos {
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+    max-width: 600px;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: #fff;
+    min-width: 600px;
+}
+
+.fila-header,
+.fila-valores {
+    display: grid;
+    grid-template-columns: 50px repeat(6, 1fr);
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    gap: 5px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+}
+
+.fila-header {
+    background-color: #e0e0e000;
+    font-weight: bold;
+    font-size: .8rem;
+    border-radius: 6px;
+}
+
+.fila-valores {
+
+    border-radius: 6px;
+    font-size: .8rem;
+
+}
+
+.celda-header,
+.celda,
+.intento-numero {
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.celda-header,
+.celda {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.celda.nombre,
+.celda.nacimiento,
+.celda.origen,
+.celda.posicion {
+    font-size: 1.2rem;
+}
+
+.celda-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    color: #333;
+    gap: 15px;
+    padding-bottom: 0;
+}
+
+.icono {
+    width: 32px;
+    height: 32px;
+    min-width: 32px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.734);
+}
+
+.titulo {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #000000;
+    text-align: center;
+}
+
+.intento-numero {
+
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    background-color: #387c90;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-size: .8rem;
+}
+
+
+
+.celda {
+    border: #191a19 2px solid;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.509);
+
+}
+
+.verde {
+    background-color: #4caf50;
+    color: white;
+}
+
+.naranja {
+    background-color: #dfe920;
+    color: rgb(0, 0, 0);
+}
+
+.rojo {
+    background-color: #f44336;
+    color: white;
+}
+
+.oculto {
+    display: none;
+}
+
+#resultadoFinal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+    width: 90%;
+    max-width: 600px;
+    padding: 10px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.708);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.452);
+    backdrop-filter: blur(12.6px);
+    -webkit-backdrop-filter: blur(12.6px);
+    border: 3px solid rgba(255, 255, 255, 0.722)
+}
+
+
+
+#resultadoFinal.oculto {
+    display: none;
+}
+
+.resuelto {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    color: rgb(0, 0, 0);
+    margin-bottom: 15px;
+    font-size: .8rem;
+    font-weight: bold;
+
+}
+
+.proximoJugador {
+    font-size: .8rem;
+    padding: 10px;
+    color: #316a7b;
+
+}
+
+#compartirBtn {
+    background-color: #387c90;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#compartirBtn:hover {
+    background-color: #316a7b;
+}
+
+
+
+#intentos::-webkit-scrollbar {
+    height: 8px;
+}
+
+#intentos::-webkit-scrollbar-track {
+    background: #f0f0f0;
+    border-radius: 4px;
+}
+
+#intentos::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 4px;
+}
+
+#intentos::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+
+.bmc-container {
+    position: fixed;
+    width: 100%;
+    bottom: 30px;
+    left: -10px;
+    z-index: 1000;
+}
+
+.help-button {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    z-index: 1000;
+    background-color: #062c0d;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.help-popup {
+    position: relative;
+    top: 60px;
+    width: 80%;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    z-index: 1001;
+    /* make this scrollabel */
+    max-height: 800px;
+    overflow-y: auto;
+
+
+}
+
+::backdrop {
+    background-image: url("cesped.png");
+    background-repeat: repeat;
+    background-size: 400px 400px;
+}
+
+#closeHelpBtn {
+    position: sticky;
+    float: right;
+    top: 5px;
+    right: 5px;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.compartir {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.compartir-alert {
+    position: absolute;
+    bottom: -20px;
+    width: 300px;
+
+    color: rgb(101, 180, 233);
+    font-size: .8rem;
+}
+
+.compartir-alert.oculto {
+    display: none;
+}
+
+
+/* Media Queries */
+@media (max-width: 480px) {
+    .container {
+        font-size: .6rem;
+    }
+
+    .fila-header,
+    .fila-valores {
+        grid-template-columns: repeat(6, 1fr);
+        gap: 3px;
+        padding: 3px;
+    }
+
+    .icono {
+        padding: 3px;
+        font-size: 1.5rem;
+
+
+    }
+
+    .titulo {
+        display: none;
+    }
+
+    .celda.nombre,
+    .celda.nacimiento,
+    .celda.origen,
+    .celda.posicion {
+        font-size: 0.7rem;
+        padding-right: 0px;
+        padding-left: 0px;
+        overflow-wrap: anywhere;
+        word-break: break-word;
+    }
+
+    .celda-header,
+    .celda {
+
+        font-size: 0.6rem;
+        padding-right: 0px;
+        padding-left: 0px;
+
+    }
+
+    .intento-numero {
+        display: none;
+    }
+
+    .help-popup {
+        position: relative;
+        top: -100px;
+        width: 80%;
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        padding: 15px;
+        z-index: 1001;
+        /* make this scrollabel */
+        max-height: 500px;
+        overflow-y: auto;
+
+
+    }
+
+
+
+}
