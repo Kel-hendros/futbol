@@ -63,6 +63,46 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.457);
 }
 
+.contenedor-racha {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 30px;
+    height: 30px;
+    background: rgb(0, 0, 0);
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: width 0.3s ease;
+    cursor: pointer;
+    padding: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.contenedor-racha.desplegado {
+    width: auto;
+    border-radius: 20px;
+    padding: 0 10px;
+    justify-content: flex-start;
+    transition: width 0.3s ease;
+}
+
+.contenedor-racha span:first-child {
+    display: none;
+    white-space: nowrap;
+    margin-right: 8px;
+}
+
+.contenedor-racha.desplegado span:first-child {
+    display: inline-block;
+    white-space: nowrap;
+    margin-right: 8px;
+}
+
+
 .buscador-container {
     display: flex;
     flex-direction: column;

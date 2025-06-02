@@ -17,6 +17,9 @@
     </div>
     <div class="container">
         <button id="helpBtn" class="help-button">?</button>
+        <div id="contenedorRacha" class="contenedor-racha">
+            <span>Aciertos consecutivos: </span> <span id="contadorRacha">0</span>
+        </div>
         <h1>⚽ Adiviná el jugador del día ⚽</h1>
         <div id="buscadorContainer" class="buscador-container">
             <input type="text" id="buscador" placeholder="Escribí el nombre del jugador..." autocomplete="off" />
@@ -30,10 +33,12 @@
     <dialog id="helpModal" class="help-popup">
         <button id="closeHelpBtn">X</button>
         <h2>Instrucciones</h2>
-        <p>El objetivo del juego es adivinar el nombre del jugador del día en la menor cantidad de intentos posible.</p>
+        <p>El objetivo del juego es adivinar el nombre del jugador del día en la menor cantidad de intentos posible.
+        </p>
         <p>Podés escribir el nombre en el buscador y seleccionar uno de los sugeridos.</p>
         <p>Cada tarjeta agrega pistas:</p>
-        <p><strong>🌎 Pais de origen:</strong> Si el pais coincide, es verde. Si el continente coincide, es amarilla. De
+        <p><strong>🌎 Pais de origen:</strong> Si el pais coincide, es verde. Si el continente coincide, es
+            amarilla. De
             lo
             contrario es
             tarjeta roja.</p>
@@ -41,7 +46,8 @@
             flecha
             si hay que buscar
             más arriba o más abajo.</p>
-        <p><strong>🎽 Equipo:</strong> Si al menos un equipo coincide con el del Jugador del Dia, será tarjeta amarilla.
+        <p><strong>🎽 Equipo:</strong> Si al menos un equipo coincide con el del Jugador del Dia, será tarjeta
+            amarilla.
             Si
             ningún equipo
             coincide, tarjeta roja.</p>
@@ -57,7 +63,8 @@
         </ul>
         Puede haber jugadores sin ninguna copa.
         <p>Si al menos una copa coincide, es tarjeta amarilla, sino tarjeta roja.</p>
-        <p><strong>🔀 Posición:</strong> Si la posición coincide, es tarjeta verde. Si no, es tarjeta roja. Se usa la
+        <p><strong>🔀 Posición:</strong> Si la posición coincide, es tarjeta verde. Si no, es tarjeta roja. Se usa
+            la
             posición más
             iconica
             del jugador, y puede ser una de las siguientes:</p>

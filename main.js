@@ -2,6 +2,8 @@ let jugadores = [];
 let jugadorDelDia = null;
 let intentos = [];
 let adivinado = false;
+let racha = 0;
+let ultimaAdivinada = null;
 
 const HEADERS_CON_ICONOS = [
   "👤 Nombre",
@@ -17,7 +19,7 @@ async function cargarJugadores() {
   jugadores = await res.json();
   const { jugador, ahoraUTC } = await elegirJugadorDelDia();
   jugadorDelDia = jugador;
-  console.log("Jugador del día:", jugadorDelDia);
+  //   console.log("Jugador del día:", jugadorDelDia);
   document.getElementById("jugadorCorrecto").textContent =
     "Jugador del día: " + jugadorDelDia.nombre_completo;
   renderJugadorInfo(jugadorDelDia, "jugadorCorrecto");
@@ -31,7 +33,6 @@ async function elegirJugadorDelDia() {
   const ahoraLocal = new Date();
   const offsetMinutos = ahoraLocal.getTimezoneOffset(); // en minutos
   const ahoraUTC = new Date(ahoraLocal.getTime() + offsetMinutos * 60000);
-  const yyyyMMdd = ahoraUTC.toISOString().slice(0, 10);
 
   const fechaBase = new Date("2025-05-31T00:00:00Z");
   const diffDias = Math.floor((ahoraUTC - fechaBase) / 86400000);
@@ -41,7 +42,12 @@ async function elegirJugadorDelDia() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  cargarJugadores();
+  const contadorRacha = document.getElementById("contadorRacha");
+
+  cargarJugadores().then(() => {
+    // Una vez cargado el estado y la racha, actualizamos el número en el badge
+    contadorRacha.textContent = racha;
+  });
 
   const input = document.getElementById("buscador");
   const sugerencias = document.getElementById("sugerencias");
@@ -49,6 +55,10 @@ document.addEventListener("DOMContentLoaded", () => {
   input.addEventListener("input", () => {
     const texto = input.value.toLowerCase();
     sugerencias.innerHTML = "";
+    if (texto.length < 3) {
+      sugerencias.classList.add("oculto");
+      return;
+    }
     sugerencias.classList.remove("oculto");
     const coincidencias = jugadores
       .filter((j) => j.nombre_completo.toLowerCase().includes(texto))
@@ -102,22 +112,36 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function evaluarIntento(jugador) {
   intentos.push(jugador);
-  guardarEstadoJuego();
 
   agregarIntento(jugador);
 
   // Mostrar resultado si es correcto
   if (jugador.nombre_completo === jugadorDelDia.nombre_completo) {
     adivinado = true;
-    ocultarInputsDeJuego();
+    // Actualizar racha y ultimaAdivinada
+    const hoy = new Date().toISOString().slice(0, 10);
+    const ayer = new Date(Date.now() - 86400000).toISOString().slice(0, 10);
+    if (ultimaAdivinada === hoy) {
+      // ya contada hoy, no cambiamos racha
+    } else if (ultimaAdivinada === ayer) {
+      racha = racha + 1;
+    } else {
+      racha = 1;
+    }
+    ultimaAdivinada = hoy;
+    // Actualizar contador en la UI
+    document.getElementById("contadorRacha").textContent = racha;
     guardarEstadoJuego();
 
+    ocultarInputsDeJuego();
     confetti({
       particleCount: 350,
       spread: 100,
       origin: { y: 0.6 },
     });
     mostrarResultadoFinal();
+  } else {
+    guardarEstadoJuego();
   }
 }
 
@@ -316,19 +340,45 @@ function guardarEstadoJuego() {
     intentos: intentos.map((j) => j.nombre_completo),
     adivinado,
     fecha: obtenerFechaUTCString(),
+    jugadorDelDia: jugadorDelDia.nombre_completo,
+    racha,
+    ultimaAdivinada,
   };
   localStorage.setItem("estadoJuego", JSON.stringify(estado));
 }
 
 function cargarEstadoGuardado() {
   const estadoGuardado = JSON.parse(localStorage.getItem("estadoJuego"));
+  // Inicialización de racha antes de procesar la lógica del juego del día
+  const ayer = new Date(Date.now() - 86400000).toISOString().slice(0, 10);
+  if (estadoGuardado) {
+    const {
+      racha: rachaGuardada = 0,
+      ultimaAdivinada: ultimaAdivinadaGuardada = null,
+      fecha: fechaGuardada = null,
+    } = estadoGuardado;
+    // Si el estado guardado corresponde a un día anterior a hoy
+    if (
+      fechaGuardada &&
+      fechaGuardada < new Date().toISOString().slice(0, 10)
+    ) {
+      if (ultimaAdivinadaGuardada !== ayer) {
+        racha = 0;
+      } else {
+        racha = rachaGuardada;
+      }
+    } else {
+      // Si es el mismo día o no tiene fecha previa, conservamos la racha guardada
+      racha = rachaGuardada;
+    }
+    ultimaAdivinada = ultimaAdivinadaGuardada;
+  }
   const fechaHoy = obtenerFechaUTCString();
 
   if (estadoGuardado && estadoGuardado.fecha === fechaHoy) {
-    // Validar si el jugador del día coincide con los intentos guardados
     if (
-      jugadorDelDia &&
-      !estadoGuardado.intentos.includes(jugadorDelDia.nombre_completo)
+      !estadoGuardado.jugadorDelDia ||
+      estadoGuardado.jugadorDelDia !== jugadorDelDia.nombre_completo
     ) {
       localStorage.removeItem("estadoJuego");
       return;
@@ -440,3 +490,24 @@ function manejarCompartir() {
       .catch((error) => console.log("Error al compartir:", error));
   }
 }
+
+// Badge de racha
+const badge = document.getElementById("contenedorRacha");
+
+let timeoutId = null;
+function expandirBadge() {
+  // Si ya estaba expandido, reiniciamos el temporizador
+  badge.classList.add("desplegado");
+  if (timeoutId) {
+    clearTimeout(timeoutId);
+  }
+  // Después de 2 segundos, colapsar
+  timeoutId = setTimeout(() => {
+    badge.classList.remove("desplegado");
+    timeoutId = null;
+  }, 5000);
+}
+
+// Puedes usar click o mouseover, según prefieras:
+badge.addEventListener("mouseover", expandirBadge);
+badge.addEventListener("click", expandirBadge);
