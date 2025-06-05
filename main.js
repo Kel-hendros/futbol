@@ -446,6 +446,10 @@ function mostrarResultadoFinal() {
   if (btnCompartir) {
     btnCompartir.addEventListener("click", manejarCompartir);
   }
+
+  if (typeof gtag === "function") {
+    gtag("event", "jugador_encontrado", { intentos: intentos.length, racha });
+  }
 }
 
 function ocultarInputsDeJuego() {
