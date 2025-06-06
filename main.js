@@ -48,15 +48,27 @@ async function cargarJugadores() {
 }
 
 async function elegirJugadorDelDia() {
-  const ahoraLocal = new Date();
-  const offsetMinutos = ahoraLocal.getTimezoneOffset(); // en minutos
-  const ahoraUTC = new Date(ahoraLocal.getTime() + offsetMinutos * 60000);
+  // Fecha base en UTC (midnight del 31 de mayo 2025):
+  const fechaBase = Date.UTC(2025, 4, 31); // meses 0–11, así que 4 = mayo
 
-  const fechaBase = new Date("2025-05-31T00:00:00Z");
-  const diffDias = Math.floor((ahoraUTC - fechaBase) / 86400000);
+  // Ahora en UTC, quitándole las horas/minutos:
+  const ahora = new Date();
+  const ahoraUTCms = Date.UTC(
+    ahora.getUTCFullYear(),
+    ahora.getUTCMonth(),
+    ahora.getUTCDate()
+  );
+
+  // Días de diferencia:
+  const diffDias = Math.floor((ahoraUTCms - fechaBase) / 86400000);
+
+  // Índice basado en diffDias:
   const index = diffDias % jugadores.length;
 
-  return { jugador: jugadores[index], ahoraUTC };
+  return {
+    jugador: jugadores[index],
+    ahoraUTC: new Date(ahoraUTCms),
+  };
 }
 
 document.addEventListener("DOMContentLoaded", () => {
