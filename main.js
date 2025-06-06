@@ -14,6 +14,24 @@ const HEADERS_CON_ICONOS = [
   "🔀 Posición",
 ];
 
+// Validacion en consola de eventos de GA4
+window._gtag_original = window.gtag;
+
+window.gtagEventosDisparados = [];
+
+window.gtag = function (...args) {
+  if (args[0] === "event") {
+    const [_, eventName, params] = args;
+    window.gtagEventosDisparados.push({
+      eventName,
+      params,
+      timestamp: new Date().toISOString(),
+    });
+    console.log(`[GA4] Evento disparado: ${eventName}`, params);
+  }
+  window._gtag_original(...args);
+};
+
 async function cargarJugadores() {
   const res = await fetch("jugadores.json");
   jugadores = await res.json();
@@ -139,8 +157,22 @@ function evaluarIntento(jugador) {
       spread: 100,
       origin: { y: 0.6 },
     });
+
+    gtag("event", "jugador_encontrado", {
+      intentos: intentos.length,
+      racha,
+      jugador_nombre: jugador.nombre_completo,
+    });
+
     mostrarResultadoFinal();
   } else {
+    if (typeof gtag === "function") {
+      gtag("event", "intento_erroneo", {
+        intento_numero: intentos.length + 1, // el intento actual
+        jugador_intentado: jugador.nombre_completo,
+      });
+    }
+
     guardarEstadoJuego();
   }
 }
@@ -445,10 +477,6 @@ function mostrarResultadoFinal() {
   const btnCompartir = document.getElementById("compartirBtn");
   if (btnCompartir) {
     btnCompartir.addEventListener("click", manejarCompartir);
-  }
-
-  if (typeof gtag === "function") {
-    gtag("event", "jugador_encontrado", { intentos: intentos.length, racha });
   }
 }
 
