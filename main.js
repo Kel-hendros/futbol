@@ -168,7 +168,7 @@ function evaluarIntento(jugador) {
   } else {
     if (typeof gtag === "function") {
       gtag("event", "intento_erroneo", {
-        intento_numero: intentos.length + 1, // el intento actual
+        intento_numero: intentos.length, // el intento actual
         jugador_intentado: jugador.nombre_completo,
       });
     }
